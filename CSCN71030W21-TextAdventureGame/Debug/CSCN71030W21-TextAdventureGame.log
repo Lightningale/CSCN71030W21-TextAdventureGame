@@ -1,0 +1,7 @@
+﻿  loadStory.c
+  main.c
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\main.c(13,26): warning C4020: 'showParagraph': too many actual parameters
+  showParagraph.c
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showParagraph.c(8,8): warning C4013: 'system' undefined; assuming extern returning int
+  Generating Code...
+  CSCN71030W21-TextAdventureGame.vcxproj -> D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\Debug\CSCN71030W21-TextAdventureGame.exe

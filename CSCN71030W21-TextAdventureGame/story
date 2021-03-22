@@ -1,0 +1,20 @@
+0 0
+This is paragraph one
+1
+
+3 0
+This is paragraph two
+1.go to paragraph three
+2.go to paragraph four
+3.return to paragraph one
+2 3 0
+
+1 1
+This is paragraph three
+1.go to paragraph four
+Para3item
+3
+
+0 0
+This is paragraph four(the end of story)
+-1

@@ -139,7 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CSCN71030W21-TextAdventureGame.cpp" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="loadStory.c" />
+    <ClCompile Include="showParagraph.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="functions.h" />
+    <ClInclude Include="Paragraph.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
