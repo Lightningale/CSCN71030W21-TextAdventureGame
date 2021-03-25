@@ -5,7 +5,7 @@
 
 void loadStory(Paragraph* storyArr)//load story data from file
 {
-	int branches, item;//number of selection branches and if player can acquire an item here
+	int paraID, branches, item;//id of paragraph, number of selection branches and if player can acquire an item here
 	char line[MAXLINELEN];//line buffer
 	int i=0,j = 0;
     FILE* fp;
@@ -21,8 +21,12 @@ void loadStory(Paragraph* storyArr)//load story data from file
 			continue;
 		else
 		{
-			sscanf_s(line, "%d %d", &branches, &item);//first scan for branch number and check for item
-			fgets(storyArr[i].content, MAXLINELEN, fp);//scan story text
+			sscanf_s(line, "%d %d %d %d",&paraID, &branches, &item, &storyArr[i].metCondition);//first scan for id,  branch number, item check, and met condition.
+			printf("4 data: %s\n", line);
+			fgets(storyArr[i].speaker, SPEAKERLENGTH, fp);//scan for speaker name
+			printf("speaker: %s\n", storyArr[i].speaker);
+			fgets(storyArr[i].content, MAXLINELEN, fp);//scan paragraph text
+			printf("content: %s\n", storyArr[i].content);
 			for (j = 0; j < branches; j++)//scan selection branches if they exist
 			{
 				fgets(storyArr[i].branches[j], MAXBRANCHLEN, fp);
@@ -30,11 +34,16 @@ void loadStory(Paragraph* storyArr)//load story data from file
 			if (item)//scan item if it exist
 			{
 				fgets(storyArr[i].item, ITEMLENGTH, fp);
+				printf("item: %s\n", storyArr[i].item);
 			}
+			//scan for branch condition array
+			fgets(line, MAXLINELEN, fp);
+			printf("branch condition array: %s\n", line);
+			sscanf_s(line, "%d %d %d %d %d", &storyArr[i].branchConditions[0], &storyArr[i].branchConditions[1], &storyArr[i].branchConditions[2], &storyArr[i].branchConditions[3], &storyArr[i].branchConditions[4]);
 			//scan for followup paragraph ids. multiple ids may exist if there is selection branch here
 			fgets(line, MAXLINELEN, fp);
 			sscanf_s(line, "%d %d %d %d %d", &storyArr[i].next[0], &storyArr[i].next[1], &storyArr[i].next[2], &storyArr[i].next[3], &storyArr[i].next[4]);
-			//printf("%d %d %d %d %d\n", storyArr[i].next[0], storyArr[i].next[1], storyArr[i].next[2], storyArr[i].next[3], storyArr[i].next[4]);
+			printf("next id array:: %d %d %d %d %d\n", storyArr[i].next[0], storyArr[i].next[1], storyArr[i].next[2], storyArr[i].next[3], storyArr[i].next[4]);
 			i++;
 		}
 	}

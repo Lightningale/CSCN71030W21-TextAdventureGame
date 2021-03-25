@@ -9,20 +9,25 @@
 
 int main(int argc, char** argv)
 {
+	//Back end module should define story array on heap to avoid memory failure
 	Paragraph storyArr[MAXPARAGRAPHS] = {0};//stores the story. Story is anticipated to take 200 paragraphs at most here
 	SaveData saveData[SAVESLOTS] = { {0} };//stores the save data of the user.
 	char* playerName = "Akira";//username and player's name shown in script. This should be read from commandline input in official version.
-	int conditions[CONDITIONNUMBER] = { 0 };//conditions player must meet to unlock new branches. 0 means not unlocked and 1 means unlocked
-	char inventory[INVENTORYSIZE][ITEMLENGTH] = { {0} };//stores the items player have. Backend module should make sure all items are appended to the front of array
+	//int conditions[CONDITIONNUMBER] = { 0 };//conditions player must meet to reveal new branches. 0 means not condition unmet and 1 means condition met
+	//conditions[0] = 1;//condition 0 is met by default, it's for paragraphs that don't need special requirement
+	//char inventory[INVENTORYSIZE][ITEMLENGTH] = { {0} };//stores the items player have. Backend module should make sure all items are appended to the front of array
 	SaveData currentSave = { 0 };//stores the current progress of player in game
-	printf("%s\n", inventory);
+	currentSave.conditions[0] = 1;//condition 0 is met by default, it's for paragraphs that don't need special requirement
+	currentSave.conditionNum++;
+
+
 	printf("waiting to open...\n");
 	loadStory(storyArr);//load story from file
 	printf("story file loaded...\n");
-//	showParagraph(storyArr, 0);//display first paragraph. Function will proceed to next parts of story automatically
+	showParagraph(storyArr, 0,&currentSave);//display first paragraph. Function will proceed to next parts of story automatically
 	
 
-
+	/*
 	//test read save functions
 	loadSaveFile(playerName, &saveData);
 	loadSaveSlot(saveData, 9, &currentSave);
@@ -37,7 +42,7 @@ int main(int argc, char** argv)
 	currentSave.itemNum = 2;
 	currentSave.exist = 1;
 	currentSave.progress = 4;
-	writeSave(playerName, saveData, currentSave,1);
+	writeSave(playerName, saveData, currentSave,1);*/
 	printf("test complete.\n");
 	return 0;
 }
