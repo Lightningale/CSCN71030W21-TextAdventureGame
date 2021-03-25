@@ -1,3 +1,9 @@
-﻿  writeSave.c
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\writeSave.c(27,13): warning C4013: 'strncpy_s' undefined; assuming extern returning int
+﻿  loadSaveFile.c
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\loadSaveFile.c(10,9): warning C4101: 'j': unreferenced local variable
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\loadSaveFile.c(10,6): warning C4101: 'i': unreferenced local variable
+  main.c
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\main.c(27,36): warning C4047: 'function': 'SaveData *' differs in levels of indirection from 'SaveData (*)[10]'
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\main.c(27,27): warning C4024: 'loadSaveFile': different types for formal and actual parameter 2
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\main.c(35,11): warning C4013: 'strncpy_s' undefined; assuming extern returning int
+  Generating Code...
   CSCN71030W21-TextAdventureGame.vcxproj -> D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\Debug\CSCN71030W21-TextAdventureGame.exe

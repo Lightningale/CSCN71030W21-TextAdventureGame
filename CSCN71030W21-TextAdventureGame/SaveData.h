@@ -7,5 +7,5 @@ typedef struct
 	int itemNum;
 	int conditionNum;
 	char inventory[INVENTORYSIZE][ITEMLENGTH];
-	char conditions[CONDITIONNUMBER];
+	int conditions[CONDITIONNUMBER];
 }SaveData;

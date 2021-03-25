@@ -2,9 +2,7 @@
 #include<stdlib.h>
 #include "Paragraph.h"
 #include "Definition.h"
-#define MAXLINELEN 200
-#define MAXBRANCHLEN 50
-#define MAXITEMLEN 20
+
 void loadStory(Paragraph* storyArr)//load story data from file
 {
 	int branches, item;//number of selection branches and if player can acquire an item here
@@ -31,7 +29,7 @@ void loadStory(Paragraph* storyArr)//load story data from file
 			}
 			if (item)//scan item if it exist
 			{
-				fgets(storyArr[i].item, MAXITEMLEN, fp);
+				fgets(storyArr[i].item, ITEMLENGTH, fp);
 			}
 			//scan for followup paragraph ids. multiple ids may exist if there is selection branch here
 			fgets(line, MAXLINELEN, fp);

@@ -24,10 +24,13 @@
     <ClCompile Include="showParagraph.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="loadSave.c">
+    <ClCompile Include="writeSave.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="writeSave.c">
+    <ClCompile Include="loadSaveFile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="loadSaveSlot.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

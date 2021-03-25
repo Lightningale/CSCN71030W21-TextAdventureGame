@@ -13,21 +13,31 @@ int main(int argc, char** argv)
 	SaveData saveData[SAVESLOTS] = { {0} };//stores the save data of the user.
 	char* playerName = "Akira";//username and player's name shown in script. This should be read from commandline input in official version.
 	int conditions[CONDITIONNUMBER] = { 0 };//conditions player must meet to unlock new branches. 0 means not unlocked and 1 means unlocked
-	char inventory[INVENTORYSIZE][ITEMLENGTH] = { {0} };//stores the items player have
-
+	char inventory[INVENTORYSIZE][ITEMLENGTH] = { {0} };//stores the items player have. Backend module should make sure all items are appended to the front of array
+	SaveData currentSave = { 0 };//stores the current progress of player in game
 	printf("%s\n", inventory);
 	printf("waiting to open...\n");
 	loadStory(storyArr);//load story from file
 	printf("story file loaded...\n");
 //	showParagraph(storyArr, 0);//display first paragraph. Function will proceed to next parts of story automatically
 	
+
+
+	//test read save functions
+	loadSaveFile(playerName, &saveData);
+	loadSaveSlot(saveData, 9, &currentSave);
+	printf("%d %d %s\n", currentSave.progress,currentSave.conditions[2], currentSave.inventory[1]);
+
 	//test writesave function
-	conditions[2] = 1;
-	conditions[4] = 1;
-	strncpy_s(inventory[0], ITEMLENGTH, "apple", ITEMLENGTH);
-	strncpy_s(inventory[1], ITEMLENGTH, "racket", ITEMLENGTH);
-	printf("preparing to write\n");
-	writeSave(playerName, saveData, 1, 3, conditions, inventory);
+	currentSave.conditions[2] = 1;
+	currentSave.conditions[4] = 1;
+	currentSave.conditionNum = 2;
+	strncpy_s(currentSave.inventory[0], ITEMLENGTH, "apple", ITEMLENGTH);
+	strncpy_s(currentSave.inventory[1], ITEMLENGTH, "racket", ITEMLENGTH);
+	currentSave.itemNum = 2;
+	currentSave.exist = 1;
+	currentSave.progress = 4;
+	writeSave(playerName, saveData, currentSave,1);
 	printf("test complete.\n");
 	return 0;
 }
