@@ -139,13 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="loadSave.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="loadStory.c" />
     <ClCompile Include="showParagraph.c" />
+    <ClCompile Include="writeSave.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Definition.h" />
     <ClInclude Include="functions.h" />
     <ClInclude Include="Paragraph.h" />
+    <ClInclude Include="SaveData.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

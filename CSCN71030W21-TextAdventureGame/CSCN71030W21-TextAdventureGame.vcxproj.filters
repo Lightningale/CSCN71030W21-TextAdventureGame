@@ -24,12 +24,24 @@
     <ClCompile Include="showParagraph.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="loadSave.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="writeSave.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Paragraph.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="functions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Definition.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

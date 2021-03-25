@@ -1,0 +1,6 @@
+#pragma once
+#define INVENTORYSIZE 5
+#define ITEMLENGTH 10
+#define CONDITIONNUMBER 10
+#define MAXPARAGRAPHS 50
+#define SAVESLOTS 10

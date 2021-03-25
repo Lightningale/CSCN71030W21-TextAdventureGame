@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include<stdlib.h>
 #include "Paragraph.h"
+#include "Definition.h"
 #define MAXLINELEN 200
 #define MAXBRANCHLEN 50
 #define MAXITEMLEN 20
