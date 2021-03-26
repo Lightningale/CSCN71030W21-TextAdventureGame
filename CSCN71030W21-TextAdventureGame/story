@@ -1,33 +1,110 @@
-0 0 0 0 speaker
-This is paragraph one
+0 0 0 0 0
+You slowly open your eyes as you regain consciousness. You're sitting in front of your laptop, inside your bedroom. Looks like you have fallen asleep during work. As you compose yourself from dizziness, you notice something isn't right.
 0
 1
 
-1 3 0 0 Alexa
-This is paragraph two
-1.go to paragraph three
-2.go to paragraph four
-3.return to paragraph one
+1 0 0 0 0
+You cannot remember what you were doing before. The laptop screen is displaying white noise. The building that was outside the window is gone, and the sky is an indescribable blend of colors. Everything is familiar but unknown. "Fancy seeing you here, UserName."  A voice suddenly rang behind you.
 0
-2 3 0
+2
 
-2 0 1 1
-This is paragraph three
-Para3item
+2 1 0 0 0
+You turn around. A girl you do not know is sitting on your bed, but she was not there a moment ago. The girl looks at you with a smile on her face.
+Who are you?
 0
 3
 
-3 0 0 0 \0
-This is paragraph four
-1 0
+3 2 0 0 0 ???
+My name is UserName. I am you but I am not you. I am the reflection in the mirror, the shadow behind the light. But to not make things too confusing, you can call me Ego.
+But you don't look like me at all.
+Nice to meet you, Ego.
+0
 4 5
 
-4 0 0 0
-This is paragraph five(a hidden paragraph,requires Para3item)
+4 1 0 0 0 Ego
+That is a good question indeed. Why is your inner self projection a cute little girl? I have no idea at all. Perhaps you need to ask yourself instead.
+What is this place? Why am I here?
 0
-5
+6
 
-5 0 0 0
-This is paragraph six(the end of story)
+5 1 0 0 0 Ego
+I'm happy to see you again too, UserName.
+What is this place? Why am I here?
 0
--1
+6
+
+6 0 0 0 0 Ego
+This is Memento Space. It is a domain deep inside your subconsciousness, constructed with the most significant components your memory. As for why you are here......Do you know what is a flashback?
+0
+7
+
+7 0 0 0 0 Ego
+When the body faces existential crisis, the brain desperately searches the memories for ways to save itself, making people experience memories from the past. On the other hand, overfatigue put you in a deep coma. Your dwindling mind tangled with the memories, bringing you to this space in your dream.
+0
+8
+
+8 1 0 0 0 Ego
+To put it simply, you are here because you are about to die.
+What!?
+0
+9
+
+9 1 0 0 0 Ego
+That is the unfortunate truth. There are so many things I want to talk with you, but it seems that this is not the time for it yet. Your body in the real world is dying now as we speak. You have to wake up......before there is no return.
+How can I wake up?
+0
+10
+
+10 0 0 0 0 Ego
+Your hope of coming back to life lies in the Memento Space. In order to wake up, you need to collect the 3 relics: the id card, the alarm clock, and the token.
+0
+11
+
+11 0 0 0 0 Ego
+The id card protects your self cognition, the alarm clock lets your consciousness emerge from the sea of subconsciousness. I do not know what the token is for, or what form it takes: I think that is information known to you alone.
+0
+12
+
+12 0 0 0 0 Ego
+Luckily, you don't need to worry about the id card. Because I, Ego, am its keeper in Memento Space.
+0
+13
+
+13 0 0 0 0
+Ego pulls out a card from thin air and shows it to you. It has your photo and name printed on it.
+0
+14
+
+14 1 0 0 0 Ego
+The other two relics are scattered somewhere else in Memento Space. After you find both of them, come back to this room and I can let you wake up. By the way, I have two other sisters living here as well. They might know something about the other two relics. Goodluck to you, UserName.
+Leave through the bedroom door
+0
+15
+
+15 0 0 1 10
+Stepping outside the bedroom door, you immediately appear outside your house. The street you knew is gone. Everything's enveloped by a grey mist, and amidst the mist, you can vaguely make out 3 buildings that you're too familiar with.
+0
+16
+
+16 5 0 0 0
+Which way should you go?
+College building
+Cinema
+Company building
+Return to bedroom
+Return to bedroom
+0 0 0 1 2
+18 -1 -1 17 15
+
+17 0 0 0 0 Ego
+Back so soon? It seems that you have not found all the relics yet. Better hurry up now.
+0
+16
+
+18 2 0 2 1
+The college building is where you spent the most of your time during student life, but now the once crowded building seems all but deserted. Lights are off, dust covered everywhere, not a single sound can be heard. As you pass by the computer lab, you finally see a girl who's working alone here.
+Go talk to her 
+Return to your house
+0 0
+-1 16
+

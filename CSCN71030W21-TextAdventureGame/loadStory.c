@@ -21,8 +21,8 @@ void loadStory(Paragraph* storyArr)//load story data from file
 			continue;
 		else
 		{
-			sscanf_s(line, "%d %d %d %d %s",&paraID, &branches, &item, &storyArr[i].metCondition, storyArr[i].speaker,SPEAKERLENGTH);//first scan for id,  branch number, item check, and met condition.
-			printf("4 data: %s\n", line);
+			sscanf_s(line, "%d %d %d %d %d %s",&paraID, &branches, &item, &storyArr[i].metCondition, &storyArr[i].cancelCondition, storyArr[i].speaker,SPEAKERLENGTH);//first scan for id,  branch number, item check, and met condition.
+			printf("5 data: %d %d %d %d %d %s\n",  paraID, branches, item, storyArr[i].metCondition, storyArr[i].cancelCondition, storyArr[i].speaker);
 			//fgets(storyArr[i].speaker, SPEAKERLENGTH, fp);//scan for speaker name
 			//printf("speaker: %s\n", storyArr[i].speaker);
 			fgets(storyArr[i].content, MAXLINELEN, fp);//scan paragraph text
