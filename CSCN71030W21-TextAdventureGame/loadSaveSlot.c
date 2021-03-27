@@ -13,6 +13,7 @@ void loadSaveSlot(SaveData* saveData, int saveID, SaveData* currentSave)
 	}
 	for (i = 0; i < INVENTORYSIZE; i++)
 	{
-		strncpy_s(currentSave->inventory[i], ITEMLENGTH, saveData[saveID].inventory[i]);
+		currentSave->inventory[i] = saveData[saveID].inventory[i];
+		//strncpy_s(currentSave->inventory[i], ITEMLENGTH, saveData[saveID].inventory[i]);
 	}
 }

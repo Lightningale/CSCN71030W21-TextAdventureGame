@@ -148,7 +148,7 @@ Leave this place
 0
 16
 
-25 1 0 0 0 ???
+25 1 -1 0 0 ???
 sniff......sniff......What is this smell......oh, it's you. Thanks for bringing Id food, Ego. I'm just feeling hungry now.
 You're welcome, but I am not Ego
 0
@@ -211,7 +211,7 @@ Leave the cinema
 7 8
 35 16
 
-35 1 0 8 7 Id
+35 1 2 8 7 Id
 You need this alarm clock? Sure, take it. I'm glad to be able to help you. Trust me, the sound of this clock can wake you out of any dream.
 Leave the cinema
 0
@@ -265,7 +265,7 @@ No
 0 0
 43 41
 
-43 2 0 9 9 Superego
+43 2 3 9 9 Superego
 I have faith in your decision, UserName. When you think you're ready, go back to your bedroom and Ego will bring you back to reality.
 I'm all ready now.
 A quick review, just to be sure.
@@ -279,7 +279,7 @@ No
 0
 45 41
 
-45 2 0 10 10 Superego
+45 2 4 10 10 Superego
 Please don't lose it again this time, UserName. When you think you're ready, go back to your bedroom and Ego will bring you back to reality.
 I'm all ready now.
 A quick review, just to be sure.
@@ -293,7 +293,7 @@ No
 0 0
 47 41
 
-47 2 0 11 11 Superego
+47 2 5 11 11 Superego
 It is your own choice that decides everything in the end, UserName. When you think you're ready, go back to your bedroom and Ego will bring you back to reality.
 I'm all ready now.
 A quick review, just to be sure.
@@ -306,7 +306,7 @@ Return to the house
 0
 51
 
-49 1 0 13 12 Superego
+49 1 6 13 12 Superego
 ......UserName! I almost forgot about something. The first relic, the id card, I've been keeping this for you. You cannot wake up without this. Here, take it.
 Take the id card from Superego
 0
@@ -328,7 +328,7 @@ Proceed to bedroom
 12 13 0 0 2
 49 50 76 77 52
 
-52 1 0 0 0 Ego
+52 1 7 0 0 Ego
 You finally came back, I was a bit worried that you might not make it in time. Here is your id card, take it. 
 Take the id card from Ego
 0

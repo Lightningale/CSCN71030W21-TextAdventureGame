@@ -6,6 +6,7 @@ typedef struct
 	int progress;
 	int itemNum;
 	int conditionNum;
-	char inventory[INVENTORYSIZE][ITEMLENGTH];
+	//char inventory[INVENTORYSIZE][ITEMLENGTH];
+	int inventory[INVENTORYSIZE];
 	int conditions[CONDITIONNUMBER];
 }SaveData;

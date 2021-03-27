@@ -29,11 +29,12 @@ condition table:
 13: player received the id card from Superego.
 inventory table:
 1: snacks
-2£ºfolder
-3£ºmedal
-4£ºusb drive
-5: Superego's id card
-6: Ego's id card
+2: alarm clock
+3£ºfolder
+4£ºmedal
+5£ºusb drive
+6: Superego's id card
+7: Ego's id card
 
 endings:
 -1:Pass out after seeing player's work in the office

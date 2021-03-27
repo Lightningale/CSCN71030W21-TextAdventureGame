@@ -21,10 +21,7 @@ void writeSave(char* userName,SaveData* saveData, SaveData currentSave,int saveI
 	}
 	for (i = 0; i < INVENTORYSIZE; i++)//save the inventory in save data
 	{
-		if (currentSave.inventory[i][0] != 0)
-		{
-			strncpy_s(saveData[saveID].inventory[i], ITEMLENGTH, currentSave.inventory[i], ITEMLENGTH);
-		}
+		saveData[saveID].inventory[i] = currentSave.inventory[i];
 	}
 	saveData[saveID].itemNum = currentSave.itemNum;
 	saveData[saveID].conditionNum = currentSave.conditionNum;
@@ -44,9 +41,9 @@ void writeSave(char* userName,SaveData* saveData, SaveData currentSave,int saveI
 			fprintf_s(fp, "%d ", saveData[i].conditions[j]);	
 		}
 		fprintf_s(fp,"\n");
-		for (j = 0; j < saveData[i].itemNum; j++)//third part prints the inventory array
+		for (j = 0; j < INVENTORYSIZE; j++)//third part prints the inventory array
 		{
-			fprintf_s(fp,"%s ", saveData[i].inventory[j]);
+			fprintf_s(fp,"%d ", saveData[i].inventory[j]);
 		}
 		fprintf_s(fp,"\n");
 	}

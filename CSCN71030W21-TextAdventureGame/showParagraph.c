@@ -3,7 +3,7 @@
 #include "Paragraph.h"
 #include "SaveData.h"
 #include "functions.h"
-int showParagraph(Paragraph* storyArr, int progress, SaveData* currentSave)//test code for display story
+int showParagraph(Paragraph* storyArr, int progress, SaveData* currentSave,char itemData[][ITEMLENGTH])//test code for display story
 {
 	int i,j=0;//loop counter
 	int input;
@@ -23,9 +23,21 @@ int showParagraph(Paragraph* storyArr, int progress, SaveData* currentSave)//tes
 	}
 	printf("%s\n", storyArr[progress].content);//display paragraph text
 	
-	if (storyArr[progress].item[0] != '\0')//if an item exists here, display notice
-		printf("acquired %s\n\n", storyArr[progress].item);
-
+	//if (storyArr[progress].item[0] != '\0')//if an item exists here, display notice
+		//printf("acquired %s\n\n", storyArr[progress].item);
+	printf("Inventory:");
+	for (i = 0; i < INVENTORYSIZE; i++)//display inventory items here
+	{
+		if (currentSave->inventory[i])
+		{
+			printf("%s; ",itemData[i]);
+		}
+	}
+	printf("\n");
+	if (storyArr[progress].item > 0)//make changes to inventory after displaying 
+		currentSave->inventory[storyArr[progress].item] = 1;
+	else if(storyArr[progress].item < 0)
+		currentSave->inventory[-storyArr[progress].item] = 0;
 
 	if (storyArr[progress].branches[0][0] == '\0')//if no branch exist, proceed to next paragraph upon any input
 	{
@@ -38,7 +50,7 @@ int showParagraph(Paragraph* storyArr, int progress, SaveData* currentSave)//tes
 		{
 			if (storyArr[progress].next[i] >=0 && currentSave->conditions[storyArr[progress].branchConditions[i]])//check if conditions are met to proceed to next paragraph. Branches ahead in array are more prioritized.
 			{
-				return showParagraph(storyArr, storyArr[progress].next[i], currentSave);
+				return showParagraph(storyArr, storyArr[progress].next[i], currentSave,itemData);
 				break;
 			}
 			else if (storyArr[progress].next[i] <0 && currentSave->conditions[storyArr[progress].branchConditions[i]])//This means end of story is reached.
@@ -76,8 +88,21 @@ int showParagraph(Paragraph* storyArr, int progress, SaveData* currentSave)//tes
 						printf(" %s\n", storyArr[progress].branches[i]);
 					j++;
 				}
-				
 			}
+			printf("Inventory:");
+			for (i = 0; i < INVENTORYSIZE; i++)//display inventory items here
+			{
+				if (currentSave->inventory[i])
+				{
+					printf("%s; ", itemData[i]);
+				}
+			}
+			printf("\n");
+			if (storyArr[progress].item > 0)//make changes to inventory after displaying 
+				currentSave->inventory[storyArr[progress].item] = 1;
+			else if (storyArr[progress].item < 0)
+				currentSave->inventory[-storyArr[progress].item] = 0;
+
 			command = getch();
 			if (command == 72 && cursor > 0)//move cursor up
 			{
@@ -91,7 +116,7 @@ int showParagraph(Paragraph* storyArr, int progress, SaveData* currentSave)//tes
 			{
 				if (next[cursor] >=0 && currentSave->conditions[branchConditions[cursor]])//make sure conditions are met
 				{
-					return showParagraph(storyArr, next[cursor], currentSave);//go to paragraph pointed to by the cursor
+					return showParagraph(storyArr, next[cursor], currentSave,itemData);//go to paragraph pointed to by the cursor
 					break;
 				}
 				else if (next[cursor] <0 && currentSave->conditions[branchConditions[cursor]])
