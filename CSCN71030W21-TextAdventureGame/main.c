@@ -34,7 +34,7 @@ int main(int argc, char** argv)
 	printf("waiting to open...\n");
 	loadStory(storyArr);//load story from file
 	printf("story file loaded...\n");
-	ending=showParagraph(storyArr, 16,&currentSave);//display first paragraph. Function will proceed to next parts of story automatically
+	ending=showParagraph(storyArr, 1,&currentSave);//display first paragraph. Function will proceed to next parts of story automatically
 	ending--;
 	showEnding(ending);
 	getchar();
