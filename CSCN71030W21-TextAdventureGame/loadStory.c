@@ -31,19 +31,19 @@ void loadStory(Paragraph* storyArr)//load story data from file
 			{
 				fgets(storyArr[i].branches[j], MAXBRANCHLEN, fp);
 			}
-			if (item)//scan item if it exist
+			/*if (item)//scan item if it exist
 			{
 				fgets(storyArr[i].item, ITEMLENGTH, fp);
 				printf("item: %s\n", storyArr[i].item);
-			}
+			}*/
 			//scan for branch condition array
 			fgets(line, MAXLINELEN, fp);
 			printf("branch condition array: %s\n", line);
-			sscanf_s(line, "%d %d %d %d %d", &storyArr[i].branchConditions[0], &storyArr[i].branchConditions[1], &storyArr[i].branchConditions[2], &storyArr[i].branchConditions[3], &storyArr[i].branchConditions[4]);
+			sscanf_s(line, "%d %d %d %d %d %d %d %d %d %d", &storyArr[i].branchConditions[0], &storyArr[i].branchConditions[1], &storyArr[i].branchConditions[2], &storyArr[i].branchConditions[3], &storyArr[i].branchConditions[4], &storyArr[i].branchConditions[5], &storyArr[i].branchConditions[6], &storyArr[i].branchConditions[7], &storyArr[i].branchConditions[8], &storyArr[i].branchConditions[9]);
 			//scan for followup paragraph ids. multiple ids may exist if there is selection branch here
 			fgets(line, MAXLINELEN, fp);
-			sscanf_s(line, "%d %d %d %d %d", &storyArr[i].next[0], &storyArr[i].next[1], &storyArr[i].next[2], &storyArr[i].next[3], &storyArr[i].next[4]);
-			printf("next id array:: %d %d %d %d %d\n", storyArr[i].next[0], storyArr[i].next[1], storyArr[i].next[2], storyArr[i].next[3], storyArr[i].next[4]);
+			sscanf_s(line, "%d %d %d %d %d %d %d %d %d %d", &storyArr[i].next[0], &storyArr[i].next[1], &storyArr[i].next[2], &storyArr[i].next[3], &storyArr[i].next[4], &storyArr[i].next[5], &storyArr[i].next[6], & storyArr[i].next[7], & storyArr[i].next[8], & storyArr[i].next[9]);
+			printf("next id array:: %d %d %d %d %d %d %d %d %d %d\n", storyArr[i].next[0], storyArr[i].next[1], storyArr[i].next[2], storyArr[i].next[3], storyArr[i].next[4], storyArr[i].next[5], storyArr[i].next[6], storyArr[i].next[7], storyArr[i].next[8], storyArr[i].next[9]);
 			i++;
 		}
 	}

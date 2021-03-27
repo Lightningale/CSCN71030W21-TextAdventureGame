@@ -1,7 +1,2 @@
-﻿  loadStory.c
-  main.c
-  showParagraph.c
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showParagraph.c(81,19): warning C4013: 'getch' undefined; assuming extern returning int
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showParagraph.c(8,6): warning C4101: 'input': unreferenced local variable
-  Generating Code...
+﻿  main.c
   CSCN71030W21-TextAdventureGame.vcxproj -> D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\Debug\CSCN71030W21-TextAdventureGame.exe
