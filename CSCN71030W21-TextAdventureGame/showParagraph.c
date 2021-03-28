@@ -42,7 +42,7 @@ int showParagraph(Paragraph* storyArr, int progress, SaveData* currentSave,char 
 	if (storyArr[progress].branches[0][0] == '\0')//if no branch exist, proceed to next paragraph upon any input
 	{
 		
-		command=getchar();
+		//command=getchar();
 		command=getchar();
 		//getchar();
 		if(command=='\n')

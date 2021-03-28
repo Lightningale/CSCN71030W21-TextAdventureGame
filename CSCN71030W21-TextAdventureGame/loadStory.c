@@ -2,8 +2,8 @@
 #include<stdlib.h>
 #include "Paragraph.h"
 #include "Definition.h"
-
-void loadStory(Paragraph* storyArr)//load story data from file
+#include "functions.h"
+void loadStory(Paragraph* storyArr,char* playerName)//load story data from file
 {
 	int paraID, branches, item;//id of paragraph, number of selection branches and if player can acquire an item here
 	char line[MAXLINELEN];//line buffer
@@ -26,6 +26,7 @@ void loadStory(Paragraph* storyArr)//load story data from file
 			//fgets(storyArr[i].speaker, SPEAKERLENGTH, fp);//scan for speaker name
 			//printf("speaker: %s\n", storyArr[i].speaker);
 			fgets(storyArr[i].content, MAXLINELEN, fp);//scan paragraph text
+			strncpy_s(storyArr[i].content, PARAGRAPHSIZE, replaceWord(storyArr[i].content, USERNAME, playerName), PARAGRAPHSIZE);//replace player name with custom value
 			printf("content: %s\n", storyArr[i].content);
 			for (j = 0; j < branches; j++)//scan selection branches if they exist
 			{

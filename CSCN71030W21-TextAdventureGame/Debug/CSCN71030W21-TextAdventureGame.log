@@ -1,21 +1,5 @@
-﻿  loadSaveFile.c
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\loadSaveFile.c(43,314): warning C4474: 'printf' : too many arguments passed for format string
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\loadSaveFile.c(43,314): message : placeholders and their parameters expect 8 variadic arguments, but 9 were provided
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\loadSaveFile.c(10,9): warning C4101: 'j': unreferenced local variable
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\loadSaveFile.c(10,6): warning C4101: 'i': unreferenced local variable
-  loadSaveSlot.c
-  loadStory.c
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\loadStory.c(8,24): warning C4101: 'item': unreferenced local variable
-  main.c
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\main.c(38,56): warning C4047: 'function': 'char *' differs in levels of indirection from 'char [10][20]'
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\main.c(38,48): warning C4024: 'showParagraph': different types for formal and actual parameter 4
-  showEnding.c
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showEnding.c(30,8): warning C4013: 'system' undefined; assuming extern returning int
-  showParagraph.c
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showParagraph.c(6,81): warning C4028: formal parameter 4 different from declaration
+﻿  showParagraph.c
 D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showParagraph.c(106,19): warning C4013: 'getch' undefined; assuming extern returning int
 D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showParagraph.c(9,6): warning C4101: 'input': unreferenced local variable
-  writeSave.c
-  Generating Code...
 D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showParagraph.c(133): warning C4715: 'showParagraph': not all control paths return a value
   CSCN71030W21-TextAdventureGame.vcxproj -> D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\Debug\CSCN71030W21-TextAdventureGame.exe

@@ -17,7 +17,7 @@ int main(int argc, char** argv)
 	//conditions[0] = 1;//condition 0 is met by default, it's for paragraphs that don't need special requirement
 	//char inventory[INVENTORYSIZE][ITEMLENGTH] = { {0} };//stores the items player have. Backend module should make sure all items are appended to the front of array
 	char itemData[INVENTORYSIZE][ITEMLENGTH] = { "","Snacks","Alarm clock","Folder","Medal","USB drive","ID card","ID card",0,0 };
-	int ending;//return value of showParagraph, shows what end the story has come to
+	int ending=0;//return value of showParagraph, shows what end the story has come to
 	SaveData currentSave = { 0 };//stores the current progress of player in game
 	currentSave.conditions[0] = 1;//condition 0 is met by default, it's for paragraphs that don't need special requirement
 	currentSave.conditions[1] = 1;
@@ -33,12 +33,11 @@ int main(int argc, char** argv)
 
 
 	printf("waiting to open...\n");
-	loadStory(storyArr);//load story from file
+	loadStory(storyArr,playerName);//load story from file
 	printf("story file loaded...\n");
 	ending=showParagraph(storyArr, 1,&currentSave,itemData);//display first paragraph. Function will proceed to next parts of story automatically
 	ending--;
 	showEnding(ending);
-	getchar();
 	//free(currentSave);
 	/*
 	//test read save functions

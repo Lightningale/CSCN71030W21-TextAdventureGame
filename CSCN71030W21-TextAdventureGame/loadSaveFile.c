@@ -40,7 +40,7 @@ void loadSaveFile(char* userName, SaveData* saveData)
 				fgets(line, MAXLINELEN, fp);//load items
 				sscanf_s(line, "%d %d %d %d %d %d %d %d %d %d", &saveData[saveSlot].inventory[0], &saveData[saveSlot].inventory[1], &saveData[saveSlot].inventory[2], &saveData[saveSlot].inventory[3], &saveData[saveSlot].inventory[4], &saveData[saveSlot].inventory[5], &saveData[saveSlot].inventory[6], &saveData[saveSlot].inventory[7], &saveData[saveSlot].inventory[8], &saveData[saveSlot].inventory[9]);
 				//sscanf_s(line, "%s %s %s %s %s", saveData[saveSlot].inventory[0], ITEMLENGTH, saveData[saveSlot].inventory[1], ITEMLENGTH, saveData[saveSlot].inventory[2], ITEMLENGTH, saveData[saveSlot].inventory[3], ITEMLENGTH, saveData[saveSlot].inventory[4], ITEMLENGTH);
-				printf("slot%d: %d %d %d %d %d %d %d\n",saveSlot, saveData[saveSlot].inventory[0], saveData[saveSlot].inventory[1], saveData[saveSlot].inventory[2], saveData[saveSlot].inventory[3], saveData[saveSlot].inventory[4], saveData[saveSlot].inventory[5], saveData[saveSlot].inventory[6], saveData[saveSlot].inventory[7]);
+				printf("slot%d: %d %d %d %d %d %d %d %d\n",saveSlot, saveData[saveSlot].inventory[0], saveData[saveSlot].inventory[1], saveData[saveSlot].inventory[2], saveData[saveSlot].inventory[3], saveData[saveSlot].inventory[4], saveData[saveSlot].inventory[5], saveData[saveSlot].inventory[6], saveData[saveSlot].inventory[7]);
 				saveSlot++;
 			}
 		}

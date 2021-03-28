@@ -11,6 +11,8 @@
 #define BRANCHNUM 10//max branches in a paragraph
 #define ENDINGNUM 10//maxnumber of endings to the story
 #define ENDINGTITLE 50//max length of ending title
+#define MAXUSERNAME 20//max length of player name
+#define USERNAME "UserName"//placeholder for user name in story file
 /*
 condition table:
 0: default condition, always 1
