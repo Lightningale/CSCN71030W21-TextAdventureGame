@@ -23,11 +23,20 @@ void StartGame()
 
 void LoadSaveFIle()
 {
-	//void loadSaveFile(char* userName, SaveData* saveData)
+	char playerAnswer = " ";
+	char nextOption = "";
 	char* playerName = " ";
 	SaveData saveddata[SAVESLOTS] = { {0} };
-
-	loadSaveFile(playerName, saveddata);
+	printf(" Do you wish to start again or continue? \n");
+	printf("Select 'A' for Start Again and 'B' for Continue\n");
+	if (scanf_s("%c", &playerAnswer) == "A")
+	{
+		StartGame();
+	}
+	else if(scanf_s("%c", &playerAnswer) == "B")
+	{
+		loadSaveFile(playerName, saveddata);
+	}	
 }
 
 
@@ -39,6 +48,23 @@ void LoadSaveSlot()
 
 void SavePresentData()
 {
+	char playerAnswer = " ";
+	char nextOption = "";
+	char* playerName = "";
+	SaveData saveddata[SAVESLOTS] = { {0} };
+	SaveData currentSave = { 0 };
+	int playerID;
+	printf(" Do you wish to continue? \n");
+	printf("Select 'A' for Yes and 'B' for No\n");
+	if (scanf_s("%c", &playerAnswer) == "A") 
+	{
+		DisplayMenuOption(nextOption);
+	}
+	else if (scanf_s("%c", &playerAnswer) == "B")
+	{
+		writeSave(playerName, saveddata, currentSave, playerID);
+	}
+	
 	//void writeSave(char* userName,SaveData* saveData, SaveData currentSave,int saveID)
 }
 

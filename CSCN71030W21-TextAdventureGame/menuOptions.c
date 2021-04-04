@@ -9,8 +9,8 @@ int DisplayMenuOption(char menuInput)
 	int returnValue = 0;
 	char option;
 
-	
-	
+	do
+	{
 		printf("	a)	Start Game\n");
 		printf("	b)	Load Saved File\n");
 		printf("	c)	Load Saved Slot\n");
@@ -30,7 +30,9 @@ int DisplayMenuOption(char menuInput)
 				break;
 			}
 		}
-		scanf_s("%c", &option);
+	} while (true);
+			
+	scanf_s("%c", &option);
 	
 
 	return 0;
