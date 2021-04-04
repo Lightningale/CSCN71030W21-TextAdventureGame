@@ -143,6 +143,7 @@
     <ClCompile Include="loadSaveSlot.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="loadStory.c" />
+    <ClCompile Include="random.c" />
     <ClCompile Include="replaceWord.c" />
     <ClCompile Include="showEnding.c" />
     <ClCompile Include="showParagraph.c" />

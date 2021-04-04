@@ -39,6 +39,9 @@
     <ClCompile Include="replaceWord.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="random.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Paragraph.h">
