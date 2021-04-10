@@ -42,9 +42,6 @@
     <ClCompile Include="random.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="objects.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Paragraph.h">
@@ -57,6 +54,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Definition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="objects.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
