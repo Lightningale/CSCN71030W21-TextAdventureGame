@@ -42,6 +42,9 @@
     <ClCompile Include="random.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="objects.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Paragraph.h">
