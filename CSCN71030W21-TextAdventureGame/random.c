@@ -1,17 +1,21 @@
+#include <time.h>
+#include <stdlib.h>
 #include <stdio.h>
 
-int RNG()
+//rng function
+void RandomNumberGenerator(const int Min, const int Max, const int  outputnum) //takes min value, max value, and amount of numbers to output
 {
-	int r, a, b;
-	puts("100 Random Numbers");
-	for (a = 0; a < 20; a++)
-	{
-		for (b = 0; b < 5; b++)
-		{
-			r = rand();
-			printf("%dt", r);
-		}
-		putchar('n');
-	}
-	return(0);
+    int RNG = 0;
+    for (int x = 0; x < outputnum; x++)
+    {
+        RNG = rand() % (Max - Min) + Min;
+        printf("%d ", RNG);
+    }
+    printf("\n");
+}
+
+void main()
+{
+    srand(time(NULL));
+    RandomNumberGenerator(1, 500, 1);
 }
