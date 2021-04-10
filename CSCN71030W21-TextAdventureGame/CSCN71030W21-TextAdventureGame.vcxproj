@@ -152,6 +152,7 @@
   <ItemGroup>
     <ClInclude Include="Definition.h" />
     <ClInclude Include="functions.h" />
+    <ClInclude Include="location.h" />
     <ClInclude Include="objects.h" />
     <ClInclude Include="Paragraph.h" />
     <ClInclude Include="SaveData.h" />
