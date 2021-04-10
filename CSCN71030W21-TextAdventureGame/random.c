@@ -16,6 +16,6 @@ void RNG(const int Min, const int Max, const int  outputnum) //takes min value, 
 
 void main()
 {
-    srand(time(NULL));
+    srand(time(NULL)); // rng is seeded with the internal clock of the system, gives the best pseduo random number
     RNG(1, 500, 1);
 }
