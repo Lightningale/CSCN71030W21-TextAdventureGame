@@ -17,5 +17,5 @@ void RNG(const int Min, const int Max, const int  outputnum) //takes min value, 
 void main()
 {
     srand(time(NULL));
-    RandomNumberGenerator(1, 500, 1);
+    RNG(1, 500, 1);
 }
