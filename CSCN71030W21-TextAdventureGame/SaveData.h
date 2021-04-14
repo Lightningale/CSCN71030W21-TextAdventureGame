@@ -4,8 +4,8 @@ typedef struct
 {
 	int exist;
 	int progress;
-	int itemNum;
-	int conditionNum;
+	//int itemNum;
+	//int conditionNum;
 	//char inventory[INVENTORYSIZE][ITEMLENGTH];
 	int inventory[INVENTORYSIZE];
 	int conditions[CONDITIONNUMBER];

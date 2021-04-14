@@ -25,7 +25,7 @@ void loadSaveFile(char* userName, SaveData* saveData)
 			continue;
 		else
 		{
-			sscanf_s(line, "%d %d %d %d", &saveData[saveSlot].exist, &saveData[saveSlot].progress, &saveData[saveSlot].conditionNum, &saveData[saveSlot].itemNum);//first read the basic information of save
+			sscanf_s(line, "%d %d", &saveData[saveSlot].exist, &saveData[saveSlot].progress);//first read the basic information of save
 			if (!saveData[saveSlot].exist)//in case of empty save slot, skip the next two lines
 			{
 				fgets(line, MAXLINELEN, fp);

@@ -15,7 +15,7 @@ void writeSave(char* userName,SaveData* saveData, SaveData currentSave,int saveI
 	{
 		if (currentSave.conditions[i] != 0)
 		{
-			saveData[saveID].conditionNum++;
+			//saveData[saveID].conditionNum++;
 			saveData[saveID].conditions[i] = currentSave.conditions[i];
 		}
 	}
@@ -23,8 +23,8 @@ void writeSave(char* userName,SaveData* saveData, SaveData currentSave,int saveI
 	{
 		saveData[saveID].inventory[i] = currentSave.inventory[i];
 	}
-	saveData[saveID].itemNum = currentSave.itemNum;
-	saveData[saveID].conditionNum = currentSave.conditionNum;
+	//saveData[saveID].itemNum = currentSave.itemNum;
+	//saveData[saveID].conditionNum = currentSave.conditionNum;
 	//printf("save data prepared\n");
 	if ((err = fopen_s(&fp, userName, "w+")) != 0)//open file in write mode
 	{
@@ -35,7 +35,8 @@ void writeSave(char* userName,SaveData* saveData, SaveData currentSave,int saveI
 	//printf("savefile opened\n");
 	for (i = 0; i < SAVESLOTS; i++)//write the save data array to save file. Each save file consists of three parts
 	{
-		fprintf_s(fp, "%d %d %d %d\n", saveData[i].exist, saveData[i].progress, saveData[i].conditionNum, saveData[i].itemNum);//in first part, store the exist flag, progress, item and condition numbers
+		//fprintf_s(fp, "%d %d %d %d\n", saveData[i].exist, saveData[i].progress, saveData[i].conditionNum, saveData[i].itemNum);//in first part, store the exist flag, progress, item and condition numbers
+		fprintf_s(fp, "%d %d\n", saveData[i].exist, saveData[i].progress);//in first part, store the exist flag, progress
 		for (j = 0; j < CONDITIONNUMBER; j++)//second part prints the condition array;
 		{
 			fprintf_s(fp, "%d ", saveData[i].conditions[j]);	

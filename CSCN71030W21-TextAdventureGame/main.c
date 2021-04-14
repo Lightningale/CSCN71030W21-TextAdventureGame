@@ -18,6 +18,7 @@ int main(int argc, char** argv)
 	//char inventory[INVENTORYSIZE][ITEMLENGTH] = { {0} };//stores the items player have. Backend module should make sure all items are appended to the front of array
 	char itemData[INVENTORYSIZE][ITEMLENGTH] = { "","Snacks","Alarm clock","Folder","Medal","USB drive","ID card","ID card",0,0 };
 	int ending=0;//return value of showParagraph, shows what end the story has come to
+	int i = 0;
 	SaveData currentSave = { 0 };//stores the current progress of player in game
 	currentSave.conditions[0] = 1;//condition 0 is met by default, it's for paragraphs that don't need special requirement
 	currentSave.conditions[1] = 1;
@@ -26,46 +27,60 @@ int main(int argc, char** argv)
 	currentSave.conditions[7] = 1;
 	currentSave.conditions[12] = 1;
 	//currentSave.conditions[8] = 1;
-	currentSave.conditionNum++;
 	//SaveData* currentSave = (SaveData *)malloc(sizeof(SaveData));
 	//currentSave->conditions[0] = 1;
 	//currentSave->conditionNum++;
 
-
+/*
 	printf("waiting to open...\n");
 	loadStory(storyArr,playerName);//load story from file
 	printf("story file loaded...\n");
 	ending=showParagraph(storyArr, 1,&currentSave,itemData);//display first paragraph. Function will proceed to next parts of story automatically
 	ending--;
 	showEnding(ending);
-	//free(currentSave);
-	/*
-	//test read save functions
-	loadSaveFile(playerName, &saveData);
-	loadSaveSlot(saveData, 9, &currentSave);
-	printf("%d %d %s\n", currentSave.progress,currentSave.conditions[2], currentSave.inventory[1]);
 
+	*/
+	
+
+	
 	//test writesave function
 	currentSave.conditions[2] = 1;
 	currentSave.conditions[4] = 1;
-	currentSave.conditionNum = 2;
-	strncpy_s(currentSave.inventory[0], ITEMLENGTH, "apple", ITEMLENGTH);
-	strncpy_s(currentSave.inventory[1], ITEMLENGTH, "racket", ITEMLENGTH);
-	currentSave.itemNum = 2;
+	currentSave.inventory[3]=1;
+	currentSave.inventory[4]=1;
 	currentSave.exist = 1;
 	currentSave.progress = 4;
-	writeSave(playerName, saveData, currentSave,1);*/
+	writeSave(playerName, saveData, currentSave,1);
+	currentSave.conditions[3] = 0;
+	currentSave.inventory[5] = 1;
+	writeSave(playerName, saveData, currentSave, 9);
+	
+	//test read save functions
+	loadSaveFile(playerName, &saveData);
+	loadSaveSlot(saveData, 1, &currentSave);
+	for (i = 0; i < CONDITIONNUMBER; i++)
+	{
+		printf("%d ", currentSave.conditions[i]);
+	}
+	printf("\n");
+	for (i = 0; i < INVENTORYSIZE; i++)
+	{
+		printf("%d ", currentSave.inventory[i]);
+	}
+	printf("\n");
+	loadSaveSlot(saveData, 9, &currentSave);
+	for (i = 0; i < CONDITIONNUMBER; i++)
+	{
+		printf("%d ", currentSave.conditions[i]);
+	}
+	printf("\n");
+	for (i = 0; i < INVENTORYSIZE; i++)
+	{
+		printf("%d ", currentSave.inventory[i]);
+	}
+	printf("\n");
+	
 	printf("test complete.\n");
 	return 0;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

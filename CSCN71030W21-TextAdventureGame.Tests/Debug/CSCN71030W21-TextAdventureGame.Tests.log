@@ -1,0 +1,7 @@
+﻿  CSCN71030W21-TextAdventureGame.Tests.cpp
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\functions.h(3,16): error C2065: 'Paragraph': undeclared identifier
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\functions.h(3,27): error C2065: 'storyArr': undeclared identifier
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\functions.h(3,40): error C2062: type 'char' unexpected
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\functions.h(5,19): error C2065: 'Paragraph': undeclared identifier
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\functions.h(5,30): error C2065: 'storyArr': undeclared identifier
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\functions.h(5,43): error C2062: type 'int' unexpected
