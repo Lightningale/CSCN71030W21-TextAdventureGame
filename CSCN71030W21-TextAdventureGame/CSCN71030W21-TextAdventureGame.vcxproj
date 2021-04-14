@@ -143,6 +143,8 @@
     <ClCompile Include="loadSaveSlot.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="loadStory.c" />
+    <ClCompile Include="menuOptions.c" />
+    <ClCompile Include="navigation.c" />
     <ClCompile Include="replaceWord.c" />
     <ClCompile Include="showEnding.c" />
     <ClCompile Include="showParagraph.c" />
@@ -151,6 +153,8 @@
   <ItemGroup>
     <ClInclude Include="Definition.h" />
     <ClInclude Include="functions.h" />
+    <ClInclude Include="menuOptions.h" />
+    <ClInclude Include="navigation.h" />
     <ClInclude Include="Paragraph.h" />
     <ClInclude Include="SaveData.h" />
   </ItemGroup>
