@@ -1,5 +1,5 @@
-﻿  showParagraph.c
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showParagraph.c(106,19): warning C4013: 'getch' undefined; assuming extern returning int
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showParagraph.c(9,6): warning C4101: 'input': unreferenced local variable
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showParagraph.c(133): warning C4715: 'showParagraph': not all control paths return a value
+﻿  loadSaveFile.c
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\loadSaveFile.c(10,9): warning C4101: 'j': unreferenced local variable
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\loadSaveFile.c(10,6): warning C4101: 'i': unreferenced local variable
+  LINK : D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\Debug\CSCN71030W21-TextAdventureGame.exe not found or not built by the last incremental link; performing full link
   CSCN71030W21-TextAdventureGame.vcxproj -> D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\Debug\CSCN71030W21-TextAdventureGame.exe
