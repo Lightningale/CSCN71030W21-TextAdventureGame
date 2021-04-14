@@ -14,7 +14,7 @@ void RNG(const int Min, const int Max, const int  outputnum) //takes min value, 
     printf("\n");
 }
 
-void main()
+void main() //testing RNG function, this is how it should be called in main game
 {
     srand(time(NULL)); // rng is seeded with the internal clock of the system, gives the best pseduo random number
     RNG(1, 500, 1);
