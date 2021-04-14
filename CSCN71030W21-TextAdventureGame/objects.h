@@ -10,7 +10,7 @@ typedef struct object {
 } OBJECT;
 
 OBJECT objs[] = {
-	{"Location 0", "loc0", NULL}, //merged location and object list into one, so these first 2 objects are the locations where players can go
+	{"Location 0", "loc0", NULL}, //merged location and object list into one, so these first 7 objects are the locations where players can go
 	{"Location 1", "loc1", NULL},
 	{"Location 2", "loc2", NULL},
 	{"Location 3", "loc3", NULL},
