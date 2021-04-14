@@ -139,22 +139,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="loadAA.c" />
     <ClCompile Include="loadSaveFile.c" />
     <ClCompile Include="loadSaveSlot.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="loadStory.c" />
-    <ClCompile Include="menuOptions.c" />
-    <ClCompile Include="navigation.c" />
     <ClCompile Include="replaceWord.c" />
     <ClCompile Include="showEnding.c" />
+    <ClCompile Include="showMainMenu.c" />
     <ClCompile Include="showParagraph.c" />
     <ClCompile Include="writeSave.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AsciiArt.h" />
     <ClInclude Include="Definition.h" />
     <ClInclude Include="functions.h" />
-    <ClInclude Include="menuOptions.h" />
-    <ClInclude Include="navigation.h" />
     <ClInclude Include="Paragraph.h" />
     <ClInclude Include="SaveData.h" />
   </ItemGroup>

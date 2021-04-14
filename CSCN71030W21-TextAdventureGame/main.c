@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include "SaveData.h"
 #include "Paragraph.h"
+#include "AsciiArt.h"
 #include "functions.h"
 #include "Definition.h"
 
@@ -11,6 +12,7 @@ int main(int argc, char** argv)
 {
 	//Back end module should define story array on heap to avoid memory failure
 	Paragraph storyArr[MAXPARAGRAPHS] = {0};//stores the story. Story is anticipated to take 100 paragraphs at most here
+	AsciiArt asciiArts[ASCIIARTSNUM] = { 0 };
 	SaveData saveData[SAVESLOTS] = { {0} };//stores the save data of the user.
 	char* playerName = "Akira";//username and player's name shown in script. This should be read from commandline input in official version.
 	//int conditions[CONDITIONNUMBER] = { 0 };//conditions player must meet to reveal new branches. 0 means not condition unmet and 1 means condition met
@@ -30,6 +32,8 @@ int main(int argc, char** argv)
 	//SaveData* currentSave = (SaveData *)malloc(sizeof(SaveData));
 	//currentSave->conditions[0] = 1;
 	//currentSave->conditionNum++;
+	loadAA(asciiArts);
+	showMainMenu(asciiArts);
 
 /*
 	printf("waiting to open...\n");
@@ -38,11 +42,12 @@ int main(int argc, char** argv)
 	ending=showParagraph(storyArr, 1,&currentSave,itemData);//display first paragraph. Function will proceed to next parts of story automatically
 	ending--;
 	showEnding(ending);
-
 	*/
 	
-
 	
+
+
+	/*
 	//test writesave function
 	currentSave.conditions[2] = 1;
 	currentSave.conditions[4] = 1;
@@ -79,7 +84,7 @@ int main(int argc, char** argv)
 		printf("%d ", currentSave.inventory[i]);
 	}
 	printf("\n");
-	
+	*/
 	printf("test complete.\n");
 	return 0;
 }

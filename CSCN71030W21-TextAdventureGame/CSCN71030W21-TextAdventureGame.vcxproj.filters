@@ -39,10 +39,10 @@
     <ClCompile Include="replaceWord.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="menuOptions.c">
+    <ClCompile Include="loadAA.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="navigation.c">
+    <ClCompile Include="showMainMenu.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -59,10 +59,7 @@
     <ClInclude Include="Definition.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="menuOptions.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="navigation.h">
+    <ClInclude Include="AsciiArt.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
