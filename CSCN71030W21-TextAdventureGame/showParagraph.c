@@ -3,10 +3,10 @@
 #include "Paragraph.h"
 #include "SaveData.h"
 #include "functions.h"
-int showParagraph(Paragraph* storyArr,AsciiArt* asciiArts, SaveData* saveArr, SaveData* currentSave,char itemData[][ITEMLENGTH])//test code for display story
+int showParagraph(Paragraph* storyArr,AsciiArt* asciiArts, SaveData* saveArr, SaveData* currentSave,char itemData[][ITEMLENGTH],char playerName[])//test code for display story
 {
 	int i,j=0;//loop counter
-	int input;
+	int returnVal=0;
 	char command;
 	char branches[BRANCHNUM][MAXBRANCHLEN] = { 0 };//A buffer holding the valid branches
 	int next[BRANCHNUM] = { 0 };//A buffer holding the next ids of valid branches
@@ -82,7 +82,7 @@ int showParagraph(Paragraph* storyArr,AsciiArt* asciiArts, SaveData* saveArr, Sa
 		//printf("%s", inventory);
 		//printf("%-79s|\n"," ");
 		printf("|______________________________________________________________________________|\n");
-		printf("[S]:Save [L]:Load [E]:Exit game");
+		printf("[S]:Save [L]:Load [E]:Return to menu");
 		printf("\n");
 		command = getch();
 		if (command == 72 && cursor > 0)//move cursor up
@@ -93,7 +93,29 @@ int showParagraph(Paragraph* storyArr,AsciiArt* asciiArts, SaveData* saveArr, Sa
 		{
 			cursor++;
 		}
-
+		if (command == 83 || command == 115)//save
+		{
+			returnVal = WriteSaveMenu(asciiArts);
+			if (returnVal < SAVESLOTS)
+			{
+				writeSave(playerName, &saveArr, *currentSave, returnVal);
+			}
+		}
+		if (command == 76 || command == 108)//load
+		{
+			returnVal = loadSaveMenu;
+			if (returnVal < SAVESLOTS)
+			{
+				loadSaveSlot(saveArr, returnVal, &currentSave);
+				return showParagraph(storyArr, asciiArts, &saveArr, currentSave, itemData, playerName);//go to paragraph pointed to by the cursor
+				break;
+			}
+		}
+		if (command == 69 || command == 101)//menu
+		{
+			return -1;
+			break;
+		}
 		if (storyArr[currentSave->progress].branches[0][0] == '\0')//if no branch exist, proceed to next paragraph upon any input
 		{
 
@@ -105,7 +127,7 @@ int showParagraph(Paragraph* storyArr,AsciiArt* asciiArts, SaveData* saveArr, Sa
 					if (storyArr[currentSave->progress].next[i] >= 0 && currentSave->conditions[storyArr[currentSave->progress].branchConditions[i]])//check if conditions are met to proceed to next paragraph. Branches ahead in array are more prioritized.
 					{
 						currentSave->progress = storyArr[currentSave->progress].next[i];
-						return showParagraph(storyArr, asciiArts,&saveArr, currentSave, itemData);
+						return showParagraph(storyArr, asciiArts,&saveArr, currentSave, itemData,playerName);
 						break;
 					}
 					else if (storyArr[currentSave->progress].next[i] < 0 && currentSave->conditions[storyArr[currentSave->progress].branchConditions[i]])//This means end of story is reached.
@@ -122,7 +144,7 @@ int showParagraph(Paragraph* storyArr,AsciiArt* asciiArts, SaveData* saveArr, Sa
 				if (next[cursor] >= 0 && currentSave->conditions[branchConditions[cursor]])//make sure conditions are met
 				{
 					currentSave->progress = next[cursor];
-					return showParagraph(storyArr, asciiArts, &saveArr, currentSave, itemData);//go to paragraph pointed to by the cursor
+					return showParagraph(storyArr, asciiArts, &saveArr, currentSave, itemData,playerName);//go to paragraph pointed to by the cursor
 					break;
 				}
 				else if (next[cursor] < 0 && currentSave->conditions[branchConditions[cursor]])
@@ -133,8 +155,6 @@ int showParagraph(Paragraph* storyArr,AsciiArt* asciiArts, SaveData* saveArr, Sa
 			}
 		}
 	}
-	
-
 	
 	//printf("end of paragraph %d\n",currentSave.progress);
 	//getchar();

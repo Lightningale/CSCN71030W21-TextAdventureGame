@@ -2,7 +2,7 @@
 #include "Definition.h"
 void showEnding(int ending)
 {
-	
+	int i = 0;
 	char endingTitles[10][ENDINGTITLE] = {
 		"Fatal Startle",
 		"Immersed Audience",
@@ -28,6 +28,11 @@ void showEnding(int ending)
 		0
 	};
 	system("CLS");
-	printf("%*s\n", 10, endingTitles[ending]);
-	printf("%s", endingText[ending]);
+	printf("%35s%-30s\n"," ", endingTitles[ending]);
+	printf("----------------------------------------------------------------------------------------\n");
+	for (i = 0; i < 5; i++)
+	{
+		printf("%15s%-55.55s\n", " ",endingText[ending] + i * 55);
+	}
+	//printf("%s", endingText[ending]);
 }

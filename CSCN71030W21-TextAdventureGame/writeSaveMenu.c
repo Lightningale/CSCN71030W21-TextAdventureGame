@@ -2,22 +2,51 @@
 #include<stdlib.h>
 #include "Definition.h"
 #include "SaveData.h"
-void WriteSaveMenu(SaveData* saveData)
+int WriteSaveMenu(SaveData* saveData)
 {
 	int i = 0, j = 0;
+	int cursor = 0;
+	char command = 0;
 	char line[55] = "--------------------------------------------";
 	char offset[20] = "               ";
 	char offset2[20] = "                 ";
-	printf("%s\n%s%s\n%s\n", line, offset, "Save your progress", line);
-	for (i = 0; i < SAVESLOTS; i++)
+	while (1)
 	{
-		if (saveData[i].exist)
+		system("CLS");
+		printf("%s\n%s%s\n%s\n", line, offset, "Save progress", line);
+		for (i = 0; i <= SAVESLOTS; i++)
 		{
-			printf("%s%s%d\n", offset2, "Save ", i);
+			printf("%s", offset2);
+			if (cursor == i)
+				printf(">");
+			else
+				printf(" ");
+			if (i == SAVESLOTS)
+			{
+				printf("%s\n", "CANCEL");
+			}
+			else if (saveData[i].exist)
+			{
+				printf("%s%d\n", "Save ", i);
+			}
+			else
+			{
+				printf("%s\n", "Empty Slot");
+			}
 		}
-		else
+		command = getch();
+		if (command == 72 && cursor > 0)//move cursor up
 		{
-			printf("%s%s\n", offset2, "Empty Slot");
+			cursor--;
+		}
+		if (command == 80 && cursor < SAVESLOTS)//move cursor down
+		{
+			cursor++;
+		}
+		if (command == '\r')//move cursor down
+		{
+			return cursor;
 		}
 	}
+
 }

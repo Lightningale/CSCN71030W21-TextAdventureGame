@@ -21,6 +21,7 @@ int main(int argc, char** argv)
 	char itemData[INVENTORYSIZE][ITEMLENGTH] = { "","Snacks","Alarm clock","Folder","Medal","USB drive","ID card","ID card",0,0 };
 	int ending=0;//return value of showParagraph, shows what end the story has come to
 	int i = 0;
+	int command = 0;
 	SaveData currentSave = { 0 };//stores the current progress of player in game
 	currentSave.conditions[0] = 1;//condition 0 is met by default, it's for paragraphs that don't need special requirement
 	currentSave.conditions[1] = 1;
@@ -33,17 +34,53 @@ int main(int argc, char** argv)
 	//SaveData* currentSave = (SaveData *)malloc(sizeof(SaveData));
 	//currentSave->conditions[0] = 1;
 	//currentSave->conditionNum++;
+	printf("waiting to open...\n");
 	loadSaveFile(playerName, &saveData);
 	loadAA(asciiArts);
-	//showMainMenu(asciiArts);
+	loadStory(storyArr, playerName);//load story from file
+	printf("story file loaded...\n");
+	while (1)
+	{
+		system("CLS");
+		command = showMainMenu(asciiArts);
+		if (command == 0)
+		{
+			ending = showParagraph(storyArr, asciiArts, &saveData, &currentSave, itemData,playerName);//display first paragraph. Function will proceed to next parts of story automatically
+			if (ending > 0)
+			{
+				ending--;
+				showEnding(ending);
+				break;
+			}
+			
+		}
+		else if (command == 1)
+		{
+		    command=loadSaveMenu(saveData);
+			if (command < SAVESLOTS)
+			{
+				loadSaveSlot(saveData, command, &currentSave);
+				ending = showParagraph(storyArr, asciiArts, &saveData, &currentSave, itemData,playerName);//display first paragraph. Function will proceed to next parts of story automatically
+				if (ending > 0)
+				{
+					ending--;
+					showEnding(ending);
+					break;
+				}
+			}
+		}
+		else if (command == 2)
+		{
+			exit(0);
+		}
+	}
+
 	//loadSaveMenu(saveData);
 	
-	printf("waiting to open...\n");
-	loadStory(storyArr,playerName);//load story from file
-	printf("story file loaded...\n");
-	ending=showParagraph(storyArr, asciiArts,&saveData,&currentSave,itemData);//display first paragraph. Function will proceed to next parts of story automatically
-	ending--;
-	showEnding(ending);
+
+	//ending=showParagraph(storyArr, asciiArts,&saveData,&currentSave,itemData);//display first paragraph. Function will proceed to next parts of story automatically
+	//ending--;
+	//showEnding(ending);
 	
 	
 	
