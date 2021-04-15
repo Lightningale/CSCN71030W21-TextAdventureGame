@@ -15,16 +15,30 @@ int showParagraph(Paragraph* storyArr,AsciiArt* asciiArts, SaveData* saveArr, Sa
 	char inventory[78] = "";
 	currentSave->conditions[storyArr[currentSave->progress].cancelCondition] = 0;
 	currentSave->conditions[storyArr[currentSave->progress].metCondition] = 1;//Update the condition data this paragraph meets in current save data.
+	
 	if (storyArr[currentSave->progress].item > 0)//make changes to inventory
 		currentSave->inventory[storyArr[currentSave->progress].item] = 1;
 	else if (storyArr[currentSave->progress].item < 0)
 		currentSave->inventory[-storyArr[currentSave->progress].item] = 0;
+	if (currentSave->progress == 21)
+	{
+		currentSave->inventory[1] = 0;
+		srand(time(0));
+		currentSave->inventory[8 + rand() % 3] = 1;
+	}
+	if (currentSave->progress == 25)
+	{
+		currentSave->inventory[1] = 0;
+		currentSave->inventory[8] = 0;
+		currentSave->inventory[9] = 0;
+		currentSave->inventory[10] = 0;
+	}
 	for (i = 0; i < INVENTORYSIZE; i++)//display inventory items here
 	{
 		if (currentSave->inventory[i])
 		{
-			strcat(inventory, itemData[i]);
-			strcat(inventory, " ");
+			strcat(inventory, itemData[i-1]);
+			strcat(inventory, "  ");
 			//printf("%s ", itemData[i]);
 		}
 	}

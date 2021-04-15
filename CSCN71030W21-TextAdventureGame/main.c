@@ -18,7 +18,7 @@ int main(int argc, char** argv)
 	//int conditions[CONDITIONNUMBER] = { 0 };//conditions player must meet to reveal new branches. 0 means not condition unmet and 1 means condition met
 	//conditions[0] = 1;//condition 0 is met by default, it's for paragraphs that don't need special requirement
 	//char inventory[INVENTORYSIZE][ITEMLENGTH] = { {0} };//stores the items player have. Backend module should make sure all items are appended to the front of array
-	char itemData[INVENTORYSIZE][ITEMLENGTH] = { "","Snacks","Alarm clock","Folder","Medal","USB drive","ID card","ID card",0,0 };
+	char itemData[INVENTORYSIZE][ITEMLENGTH] = { "Snacks","Alarm clock","Folder","Medal","USB drive","ID card","ID card","Potato chips","ice cream puffs","chocolate bars"};
 	int ending=0;//return value of showParagraph, shows what end the story has come to
 	int i = 0;
 	int command = 0;
