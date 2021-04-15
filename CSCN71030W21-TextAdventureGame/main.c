@@ -22,6 +22,7 @@ int main(int argc, char** argv)
 	int ending=0;//return value of showParagraph, shows what end the story has come to
 	int i = 0;
 	int command = 0;
+	int repeatflag = 0;
 	SaveData currentSave = { 0 };//stores the current progress of player in game
 	currentSave.conditions[0] = 1;//condition 0 is met by default, it's for paragraphs that don't need special requirement
 	currentSave.conditions[1] = 1;
@@ -134,7 +135,7 @@ int main(int argc, char** argv)
 	}
 	printf("\n");
 	*/
-	printf("test complete.\n");
+	
 	return 0;
 }
 

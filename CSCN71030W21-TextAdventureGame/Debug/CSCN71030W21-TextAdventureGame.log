@@ -1,5 +1,4 @@
-﻿  showParagraph.c
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showParagraph.c(26,13): warning C4013: 'time' undefined; assuming extern returning int
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showParagraph.c(40,10): warning C4013: 'strcat' undefined; assuming extern returning int
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showParagraph.c(101,18): warning C4013: 'getch' undefined; assuming extern returning int
+﻿  main.c
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\main.c(49,36): warning C4047: 'function': 'SaveData *' differs in levels of indirection from 'SaveData (*)[10]'
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\main.c(49,27): warning C4024: 'loadSaveFile': different types for formal and actual parameter 2
   CSCN71030W21-TextAdventureGame.vcxproj -> D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\Debug\CSCN71030W21-TextAdventureGame.exe

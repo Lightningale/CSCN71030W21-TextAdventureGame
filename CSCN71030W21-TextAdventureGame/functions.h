@@ -1,6 +1,6 @@
 #include "SaveData.h"
 #include "AsciiArt.h"
-void showEnding(int ending);
+int showEnding(int ending);
 void loadStory(Paragraph* storyArr,char* playerName);
 char* replaceWord(char* orig, char rep[], char* with);
 int showParagraph(Paragraph* storyArr, AsciiArt* asciiArts, SaveData* saveArr, SaveData* currentSave, char itemData[][ITEMLENGTH],char playerName[]);

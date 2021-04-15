@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include "Definition.h"
-void showEnding(int ending)
+int showEnding(int ending)
 {
 	int i = 0;
+	int cursor = 0;
+	char command = 0;
 	char endingTitles[10][ENDINGTITLE] = {
 		"Fatal Startle",
 		"Immersed Audience",
@@ -27,12 +29,48 @@ void showEnding(int ending)
 		0,
 		0
 	};
-	system("CLS");
-	printf("%35s%-30s\n"," ", endingTitles[ending]);
-	printf("----------------------------------------------------------------------------------------\n");
-	for (i = 0; i < 5; i++)
+	while (1)
 	{
-		printf("%15s%-55.55s\n", " ",endingText[ending] + i * 55);
+		system("CLS");
+		printf("%35s%-30s\n", " ", endingTitles[ending]);
+		printf("----------------------------------------------------------------------------------------\n");
+		for (i = 0; i < 5; i++)
+		{
+			printf("%15s%-55.55s\n", " ", endingText[ending] + i * 55);
+		}
+		
+		if (cursor == 0)
+		{
+			printf("%40s%s\n", " ", ">Back to menu");
+		}
+		else
+		{
+			printf("%40s%s\n", " ", " Back to menu");
+		}
+		if (cursor == 1)
+		{
+			printf("%40s%s\n", " ", ">Exit game");
+		}
+		else
+		{
+			printf("%40s%s\n", " ", " Exit game");
+		}
+		command = getch();
+		if (command == 72 && cursor > 0)//move cursor up
+		{
+			cursor--;
+		}
+		if (command == 80 && cursor < 1)//move cursor down
+		{
+			cursor++;
+		}
+		if (command == '\r')//move cursor down
+		{
+			if (cursor == 1)
+				exit(0);
+			return cursor;
+		}
 	}
+
 	//printf("%s", endingText[ending]);
 }
