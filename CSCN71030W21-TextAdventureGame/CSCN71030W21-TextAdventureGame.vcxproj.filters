@@ -45,6 +45,12 @@
     <ClCompile Include="showMainMenu.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="loadSaveMenu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="writeSaveMenu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Paragraph.h">

@@ -22,9 +22,11 @@ void loadAA(AsciiArt* asciiArts)
 		else
 		{
 			sscanf_s(line, "%d %d", &height, &length);//first scan for id,  branch number, item check, and met condition.
+			asciiArts[i].height = height;
 			for (j = 0; j < height; j++)
 			{
 				fgets(asciiArts[i].aaGrid[j], length, fp);
+				strtok(asciiArts[i].aaGrid[j], "\n");
 			}
 			i++;
 		}

@@ -13,6 +13,7 @@
 #define ENDINGTITLE 50//max length of ending title
 #define MAXUSERNAME 20//max length of player name
 #define ASCIIARTSNUM 10
+#define LOCATIONLENGTH 12
 #define USERNAME "UserName"//placeholder for user name in story file
 /*
 condition table:

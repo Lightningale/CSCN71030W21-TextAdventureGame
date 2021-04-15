@@ -28,21 +28,23 @@ int main(int argc, char** argv)
 	currentSave.conditions[5] = 1;
 	currentSave.conditions[7] = 1;
 	currentSave.conditions[12] = 1;
+	currentSave.progress = 0;
 	//currentSave.conditions[8] = 1;
 	//SaveData* currentSave = (SaveData *)malloc(sizeof(SaveData));
 	//currentSave->conditions[0] = 1;
 	//currentSave->conditionNum++;
+	loadSaveFile(playerName, &saveData);
 	loadAA(asciiArts);
-	showMainMenu(asciiArts);
-
-/*
+	//showMainMenu(asciiArts);
+	//loadSaveMenu(saveData);
+	
 	printf("waiting to open...\n");
 	loadStory(storyArr,playerName);//load story from file
 	printf("story file loaded...\n");
-	ending=showParagraph(storyArr, 1,&currentSave,itemData);//display first paragraph. Function will proceed to next parts of story automatically
+	ending=showParagraph(storyArr, asciiArts,&saveData,&currentSave,itemData);//display first paragraph. Function will proceed to next parts of story automatically
 	ending--;
 	showEnding(ending);
-	*/
+	
 	
 	
 

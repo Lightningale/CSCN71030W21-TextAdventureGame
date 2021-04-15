@@ -3,6 +3,8 @@
 typedef struct
 {
 	int id;//serial number of the paragraph
+	char location[LOCATIONLENGTH];
+	int aaId;
 	char speaker[SPEAKERLENGTH];//name of the speaker or narrator
 	char content[PARAGRAPHSIZE];//paragraph text
 	//char item[ITEMLENGTH];//item that can be aquired here if exists

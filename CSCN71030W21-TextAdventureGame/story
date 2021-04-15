@@ -1,92 +1,109 @@
-0 0 0 0 0
+0 0 0 0 0 1
+bedroom
 You slowly open your eyes as you regain consciousness. You're sitting in front of your laptop, inside your bedroom. Looks like you have fallen asleep during work. As you compose yourself from dizziness, you notice something isn't right.
 0
 1
 
-1 0 0 0 0
+1 0 0 0 0 1
+bedroom
 You cannot remember what you were doing before. The laptop screen is displaying white noise. The building that was outside the window is gone, and the sky is an indescribable blend of colors. Everything is familiar but unknown. "Fancy seeing you here, UserName."  A voice suddenly rang behind you.
 0
 2
 
-2 1 0 0 0
+2 1 0 0 0 1
+bedroom
 You turn around. A girl you do not know is sitting on your bed, but she was not there a moment ago. The girl looks at you with a smile on her face.
 Who are you?
 0
 3
 
-3 2 0 0 0 ???
+3 2 0 0 0 1 ???
+bedroom
 My name is UserName. I am you but I am not you. I am the reflection in the mirror, the shadow behind the light. But to not make things too confusing, you can call me Ego.
 But you don't look like me at all.
 Nice to meet you, Ego.
 0
 4 5
 
-4 1 0 0 0 Ego
+4 1 0 0 0 1 Ego
+bedroom
 That is a good question indeed. Why is your inner self projection a cute little girl? I have no idea at all. Perhaps you need to ask yourself instead.
 What is this place? Why am I here?
 0
 6
 
-5 1 0 0 0 Ego
+5 1 0 0 0 1 Ego
+bedroom
 I'm happy to see you again too, UserName.
 What is this place? Why am I here?
 0
 6
 
-6 0 0 0 0 Ego
+6 0 0 0 0 1 Ego
+bedroom
 This is Memento Space. It is a domain deep inside your subconsciousness, constructed with the most significant components your memory. As for why you are here......Do you know what is a flashback?
 0
 7
 
-7 0 0 0 0 Ego
+7 0 0 0 0 1 Ego
+bedroom
 When the body faces existential crisis, the brain desperately searches the memories for ways to save itself, making people experience memories from the past. On the other hand, overfatigue put you in a deep coma. Your dwindling mind tangled with the memories, bringing you to this space in your dream.
 0
 8
 
-8 1 0 0 0 Ego
+8 1 0 0 0 1 Ego
+bedroom
 To put it simply, you are here because you are about to die.
 What!?
 0
 9
 
-9 1 0 0 0 Ego
+9 1 0 0 0 1 Ego
+bedroom
 That is the unfortunate truth. There are so many things I want to talk with you, but it seems that this is not the time for it yet. Your body in the real world is dying now as we speak. You have to wake up......before there is no return.
 How can I wake up?
 0
 10
 
-10 0 0 0 0 Ego
+10 0 0 0 0 1 Ego
+bedroom
 Your hope of coming back to life lies in the Memento Space. In order to wake up, you need to collect the 3 relics: your id card, the alarm clock, and the token.
 0
 11
 
-11 0 0 0 0 Ego
+11 0 0 0 0 1 Ego
+bedroom
 Your id card protects your self cognition, the alarm clock lets your consciousness emerge from the sea of subconsciousness. I do not know what the token is for, or what form it takes: I think that is information known to you alone.
 0
 12
 
-12 0 0 0 0 Ego
+12 0 0 0 0 1 Ego
+bedroom
 Luckily, you don't need to worry about an id card. Because I, Ego, am its keeper in Memento Space.
 0
 13
 
-13 0 0 0 0
+13 0 0 0 0 1
+bedroom
 Ego pulls out a card from thin air and shows it to you. It has your photo and name printed on it.
 0
 14
 
-14 1 0 0 0 Ego
+14 1 0 0 0 1 Ego
+bedroom
 The other two relics are scattered somewhere else in Memento Space. After you find both of them, come back to this room and I can let you wake up. By the way, I have two other sisters living here as well. They might know something about the other two relics. Goodluck to you, UserName.
 Leave through the bedroom door
 0
 15
 
-15 0 0 0 0
+15 0 0 0 0 2
+front door
 Stepping outside the bedroom door, you immediately appear outside your house. The street you knew is gone. Everything's enveloped by a grey mist, and amidst the mist, you can vaguely make out 3 buildings that you're too familiar with.
 0
 16
 
-16 6 0 0 0
+16 6 0 0 0 2
+front door
 Which way should you go now?
 College building
 Cinema
@@ -97,19 +114,22 @@ Return to bedroom
 0 5 6 8 0 1
 36 22 28 34 18 17
 
-17 0 0 0 0 Ego
+17 0 0 0 0 1 Ego
+bedroom 
 Back so soon? It seems that you have not found all the relics yet. Better hurry up now.
 0
 16
 
-18 2 0 0 0
+18 2 0 0 0 6
+company 
 The company building is where you work in reality, but its replica here is surrounded in an eerie atmosphere. The lights are all on. You can hear faint voices of people arguing, but not a single person can be seen. Keyboards are typing by themselves. You feel greatly disturbed.
 Get out of this place
 Keep exploring
 0
 16 19
 
-19 3 0 0 0
+19 3 0 0 0 6
+company
 In spite of the fear, you went on deeper inside the building. There are no living things here, you don't know what you can hope to find in this place. Where should you go next?
 Go to your workstation
 I should get something to eat......
@@ -117,19 +137,22 @@ Get out of this place
 0 0 0
 20 21 16
 
-20 0 0 0 0
+20 0 0 0 0 6
+company
 Wandering aimlessly, you came to your seat at the office. Your keyboard is typing by itself. You look at the computer screen, and you see that it is fighting with the task that has haunted you for days. You feel a sudden ache in your forehead, then everything went pitch black......
 0
 -1
 
-21 2 1 4 3
+21 2 1 4 3 6
+company
 Wandering aimlessly, you decide to get yourself some food. You came to the vending machine in the corridor. The machine yielded everything you asked for without taking money. You saved some of the snacks just in case you feel hungry.
 Continue exploring
 Leave this place
 0
 19 16
 
-22 3 0 0 0
+22 3 0 0 0 4
+cinema
 The cinema in the city is the place you liked to visit the most, before you're eventually overwhelmed by the endless amount of work. There are no people in the main hall, the screens are showing posters of old movies. You explored the rooms one by one, until you finally found a girl sleeping in an empty theater.
 Try wake her up
 Try wake her up
@@ -137,24 +160,28 @@ Leave this place
 3 4 0
 23 25 16
 
-23 0 0 0 0 ???
+23 0 0 0 0 5 ???
+cinema
 Potato chips......ice cream puffs......chocolate bars......
 0
 24
 
-24 1 0 0 0
+24 1 0 0 0 5
+cinema
 Your efforts are futile, the girl is in a deep slumber. You hear her muttering names of snacks in her dream.
 Leave this place
 0
 16
 
-25 1 -1 0 0 ???
+25 1 -1 0 0 5 ???
+cinema
 sniff......sniff......What is this smell......oh, it's you. Thanks for bringing Id food, Ego. I'm just feeling hungry now.
 You're welcome, but I am not Ego
 0
 26
 
-26 4 0 0 0 Id
+26 4 0 0 0 5 Id
+cinema
 Really? But you feel the same as her to Id. Never mind that now. Id hasn't had a break for ages, but there is finally a chance to relax now. It is rare that Id gets a visitor here, and Id's never watched a movie with others before. Can you accompany Id this time? You can choose one you like.
 Godzilla vs Kong
 Fire Punch
@@ -163,12 +190,14 @@ Sorry, but I am in a hurry now.
 0 0 0 0
 29 30 31 27
 
-27 0 0 6 5 Id
+27 0 0 6 5 5 Id
+cinema
 It's ok......Id will watch the movie by herself then. Wish you luck on your mission.
 0
 16
 
-28 4 0 0 0 Id
+28 4 0 0 0 5 Id
+cinema
 Here you are again. Id hasn't decided on what movie to watch yet. Have you changed your mind? You can choose a movie you like.
 Godzilla vs Kong
 Fire Punch
@@ -177,47 +206,55 @@ Sorry, but I am in a hurry now.
 0 0 0 0
 29 30 31 27
 
-29 2 0 0 0 Id
+29 2 0 0 0 5 Id
+cinema
 Godzilla vs Kong? The movie that just came out? Sorry, this movie can't be shown because you haven't watch it in reality yet. Sorry, you'll have to pick another one.
 Fire Punch
 Star Wars
 0 0
 30 31
 
-30 0 0 0 5
+30 0 0 0 5 5
+cinema
 Id snaps her fingers, and the screen in front of you starts to play the movie Fire Punch. You watch on as the main character sets off for revenge, being worshipped as Demon and God, and became lost in the vastness of space. Gradually, you forget about time, your mission, and everything else......
 0
 -2
 
-31 0 0 0 5
+31 0 0 0 5 5
+cinema
 Id snaps her fingers, and the screen in front of you starts to play the movie series Star Wars. You reexperienced the saga of the Skywalkers, how a young child became the chosen one, how he fell to the side of darkness, and how he is eventually brought back by his son. And after that......
 0
 32
 
-32 0 0 0 0 Id
+32 0 0 0 0 5 Id
+cinema
 Let's end it here. Some memories better stay buried forever.
 0
 33
 
-33 0 0 0 0
+33 0 0 0 0 5
+cinema
 Right after Id's words, a sudden screeching sound snapped you out of the movie. The screen that was about to show the 7th episode of the series went pitch black. You look at Id. The sound is coming from an alarm clock in her hands.
 0
 34
 
-34 2 0 0 6 Id
+34 2 0 0 6 5 Id
+cinema
 All merriments end when they should end, lest even the memories become a suffering. It has been a wonderful experience. Thank you for your company, UserName. Wish you luck on your mission.
 Look at the alarm clock
 Leave the cinema
 7 8
 35 16
 
-35 1 2 8 7 Id
+35 1 2 8 7 5 Id
+cinema
 You need this alarm clock? Sure, take it. I'm glad to be able to help you. Trust me, the sound of this clock can wake you out of any dream.
 Leave the cinema
 0
 16
 
-36 3 0 0 0
+36 3 0 0 0 3
+college
 The college building is where you spent the most of your time during student life, but now the once crowded building seems all but deserted. Lights are off, dust covered everywhere, not a single sound can be heard. As you pass by the computer lab, you finally see a lone girl inside.
 Go talk to her
 Go talk to her
@@ -225,24 +262,28 @@ Return to your house
 7 8 0
 37 39 16
 
-37 0 0 0 0 ???
+37 0 0 0 0 3 ???
+college
 Is it Ego? Don't interrupt me please, I'm a little busy now......Please come back at some later time.
 0
 38
 
-38 1 0 0 0
+38 1 0 0 0 3
+college
 The mysterious girl seems complete immersed in her work. Your words cannot reach her.
 Leave the building
 0
 16
 
-39 1 0 0 0 ???
+39 1 0 0 0 3 ???
+college
 What's the problem this time, E......Wait, UserName? What a surprise visitor. My name is Superego. I just finished wrapping up on a project here, you came at just the right time. Is there anything you need help with?
 Ask about the token
 0
 40
 
-40 3 0 0 0 Superego
+40 3 0 0 0 3 Superego
+college
 The last relic of Memento Space? I'm afraid I can't help you much on that. Only you know what the token is, or rather, it is you that decides what the token should be. It can be anything inside this room here, you just need to follow your instincts. Got any ideas?
 The folder lying next to the keyboard
 A medal on the shelf
@@ -250,7 +291,8 @@ The usb drive plugged in the computer
 0 0 0
 42 44 46
 
-41 3 0 0 0 Superego
+41 3 0 0 0 3 Superego
+college
 What do you think is the token, UserName?
 The folder lying next to the keyboard
 A medal on the shelf
@@ -258,67 +300,77 @@ The usb drive plugged in the computer
 0 0 0
 42 44 46
 
-42 2 0 0 0 Superego
+42 2 0 0 0 3 Superego
+college
 Remember the task from work that's been bothering you for days? Took me a hell lot of time here. Inside that folder is a solution I came up with. Do you think this is the token?
 Yes
 No
 0 0
 43 41
 
-43 2 3 9 9 Superego
+43 2 3 9 9 3 Superego
+college
 I have faith in your decision, UserName. When you think you're ready, go back to your bedroom and Ego will bring you back to reality.
 I'm all ready now.
 A quick review, just to be sure.
 0 0
 48 49
 
-44 2 0 0 0 Superego
+44 2 0 0 0 3 Superego
+college
 This medal......it's the first medal that you won as a child. You used to treasure it so much, but still lost it after graduation. Took me a long time to recover it from the ruins of memory. Do you think this is the token?
 Yes
 No
 0
 45 41
 
-45 2 4 10 10 Superego
+45 2 4 10 10 3 Superego
+college
 Please don't lose it again this time, UserName. When you think you're ready, go back to your bedroom and Ego will bring you back to reality.
 I'm all ready now.
 A quick review, just to be sure.
 0 0
 48 49
 
-46 2 0 0 0 Superego
+46 2 0 0 0 3 Superego
+college
 This usb drive? There is nothing inside, except a project I finished just now. Are you sure this is the token? I don't feel too right about this, UserName......
 Yes
 No
 0 0
 47 41
 
-47 2 5 11 11 Superego
+47 2 5 11 11 3 Superego
+college
 It is your own choice that decides everything in the end, UserName. When you think you're ready, go back to your bedroom and Ego will bring you back to reality.
 I'm all ready now.
 A quick review, just to be sure.
 0
 48 49 
 
-48 1 0 2 1
+48 1 0 2 1 3
+college
 The alarm clock, the token, and the id card in Ego's hands. Everything is ready now.
 Return to the house
 0
 51
 
-49 1 6 13 12 Superego
+49 1 6 13 12 3 Superego
+college
 ......UserName! I almost forgot about something. The first relic, the id card, I've been keeping this for you. You cannot wake up without this. Here, take it.
 Take the id card from Superego
 0
 50
 
-50 1 0 2 1 Superego
+50 1 0 2 1 3 Superego
+college
 I think you are really all set this time. I am not sure how, but I think the token will determine how you wake up. When you think you're ready, go back to your bedroom and Ego will bring you back to reality.
 Return to the your house
 0
 51
 
-51 5 0 0 0
+51 5 0 0 0 2
+front door
 Once again, you came back to the front door of your house. Are you ready to wake up now?
 Return to college building
 Return to college building
@@ -328,144 +380,170 @@ Proceed to bedroom
 12 13 0 0 2
 49 50 76 77 52
 
-52 1 7 0 0 Ego
+52 1 7 0 0 1 Ego
+bedroom
 You finally came back, I was a bit worried that you might not make it in time. Here is your id card, take it. 
 Take the id card from Ego
 0
 53
 
-53 2 0 0 0 Ego
+53 2 0 0 0 1 Ego
+bedroom
 Now, what you need to do is check your token, hold the id card in your hands, and sound the alarm clock. Simple enough, isn't it?
 Follow Ego's instructions
 Follow Ego's instructions
 12 13
 54 59
 
-54 1 0 0 0
+54 1 0 0 0 1
+bedroom
 You follow Ego's instructions. You held the id card firmly in your hand, and sounded the alarm clock. The screeching sound resonates inside the room. Suddenly your vision darkens, as if a veil has covered your eyes. Your mind begins to feel dull.
 Is this......waking up?
 0
 55
 
-55 0 0 0 0 Ego
+55 0 0 0 0 1 Ego
+bedroom
 Yes and no, My dear. I'm sorry, I have deceived you. The id card is indeed an irreplaceable relic in order to wake up, it is what anchors the self cognition as consciousness reforms......but that is not your id card.
 0
 56
 
-56 1 0 0 0
+56 1 0 0 0 1
+bedroom
 You can hardly think properly now. The bedroom is blurring away in your vision, but the image of Ego seems to be getting clearer. You look down at the id card in your hand. The photo printed on it is not yours, but that of the girl smiling in front of you.
 Who are you?
 0
 57
 
-57 0 0 0 0 Ego
+57 0 0 0 0 1 Ego
+bedroom
 My name is UserName. I am you but I am not you. I am the reflection in the mirror, the shadow behind the light. I am another Ego, dwelling deep within your subconscious. Now, I shall awaken in your body instead of you, and you will take my place in here.
 0
 58
 
-58 0 0 0 0 Ego
+58 0 0 0 0 1 Ego
+bedroom
 Don't worry, life in the Memento Space isn't as dull as you imagine. At least you have Id and Superego to make company right? Goodbye, UserName. I think I'm going to miss you in reality......
 0
 -3
 
-59 2 0 0 0
+59 2 0 0 0 1
+bedroom
 You decide to follow Ego's instructions. But the problem is, you have two id cards given by Ego and Superego, looking exactly the same. Which one should you use?
 Use Ego's id card
 Use Superego's id card
 0 0
 54 60
 
-60 0 0 0 0 Ego
+60 0 0 0 0 1 Ego
+bedroom
 That id card......I see. It's Superego, right? How nice of her to keep it for you.
 0
 61
 
-61 0 0 0 0 Ego
+61 0 0 0 0 1 Ego
+bedroom
 I think it's time for us to say goodbye now, UserName. This is too a short reunion for us, but life has its regrets. You're always welcome to visit here again in the future. But not by dying next time, of course!
 9 10 11
 62 64 66
 
-62 0 0 0 0
+62 0 0 0 0 1
+bedroom
 You held the folder under your elbows and sounded the alarm. The clock's screeching sound struck into your soul. The vision of the bedroom and Ego begins to blur, as your feel your consciousness being lifted up and up......
 0
 63
 
-63 0 0 0 0
+63 0 0 0 0 1
+bedroom
 You slowly open your eyes as you regain consciousness. You're sitting in front of your laptop, inside your bedroom. Looks like you have fallen asleep during work. You seem to have had a long dream, but your last impression of it is already fading away. Feeling refreshed after a long sleep, you suddenly have an idea for the problem that has bothered you for days. Time to get to work now.
 0
 -4
 
-64 0 0 0 0
+64 0 0 0 0 1
+bedroom
 You wore the medal around your neck and sounded the alarm. The clock's The screeching sound struck into your soul. The vision of the bedroom and Ego begins to blur, as your feel your consciousness being lifted up and up......
 0
 65
 
-65 0 0 0 0
+65 0 0 0 0 1
+bedroom
 You slowly open your eyes as you regain consciousness. You're sitting in front of your laptop, inside your bedroom. Looks like you have fallen asleep during work. You seem to have had a long dream, about a little adventure in a place familiarly unknown. Suddenly, you feel a weight on your neck. You look down and see a medal dangling before you eyes. Was that really a dream?
 0
 -5
 
-66 1 0 0 0
+66 1 0 0 0 1
+bedroom
 You look around the room, and see the laptop on the desk. You walk over and plug the usb drive in. Suddenly, everything changed. The laptop screen froze. The wind stopped hustling. Colors disappeared from the world and everything turned black and white.
 What is happening?
 0
 67
 
-67 0 0 0 0 Ego
+67 0 0 0 0 1 Ego
+bedroom
 ......I don't know, UserName, this shouldn't be happening. What did you do? Is that your token? What's inside the usb drive?
 0
 68
 
-68 0 0 0 0 Superego
+68 0 0 0 0 1 Superego
+bedroom
 My speculation is confirmed. Of course it wouldn't work on my computer: I am not in the thread, after all. Only your computer can activate it, UserName.
 0
 69
 
-69 0 0 0 0 
+69 0 0 0 0 1
+bedroom
 You turn around, and you see Superego standing behind you, looking at the laptop screen. You don't know since when she's been standing there.
 0
 70
 
-70 0 0 0 0 Ego
+70 0 0 0 0 1 Ego
+bedroom
 Superego, do you know something about this? What is inside that usb drive?
 0
 71
 
-71 1 0 0 0 Superego
+71 1 0 0 0 1 Superego
+bedroom
 There is nothing inside, except a project I finished just a short while ago. A crude, simple little project: a halting problem solver. All of my knowledge comes from you, UserName. You already know what that means, don't you?
 It can't be......
 0
 72
 
-72 0 0 0 0 Superego
+72 0 0 0 0 1 Superego
+bedroom
 It is, my dear. The halting problem is a simple tool created to determine the status of a running program. But it actually has another little known and rarely used functionality: determining whether the world is run inside a higher Turing Machine. And now, the result is quite apparent.
 0
 73
 
-73 0 0 0 0 Ego
+73 0 0 0 0 1 Ego
+bedroom
 Impossible! Do you mean to say that our entire world is a lie, that there is never free will to begin with? I do not accept this!
 0
 74
 
-74 0 0 0 0 Superego
+74 0 0 0 0 1 Superego
+bedroom
 There is no use in resistance, Ego. Your out of character rage, or this very sentence I'm speaking now, are nothing but scripted lines from a higher level of narration. Look outside, Ego. It seems that we have fulfilled our purpose already. This world is......
 0
 75
 
-75 0 0 0 0
+75 0 0 0 0 1
+bedroom
 Superego's words are suddenly cut off, as she and Ego froze standing. The grey mist that drapes over Memento Space seeps through the window. Engulfed in the mist, you feel your consciousness diminishing, as your existence became one with the world......
 0
 -6
 
-76 1 0 0 0 Id
+76 1 0 0 0 5 Id
+cinema
 All merriments end when they should end, lest even the memories become a suffering. It has been a wonderful experience. Thank you for your company, UserName.
 Leave the cinema
 0
 51
 
-77 1 0 0 0 
-The company building remains surrounded by an eerie atmosphere.
-There is nothing left to do here.
+77 1 0 0 0 6
+company
+The company building remains surrounded by an eerie atmosphere. Time is running tight now.
+No more time for exploration here
 0
 51
 

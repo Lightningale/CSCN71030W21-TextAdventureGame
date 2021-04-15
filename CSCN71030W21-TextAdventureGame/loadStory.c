@@ -21,16 +21,20 @@ void loadStory(Paragraph* storyArr,char* playerName)//load story data from file
 			continue;
 		else
 		{
-			sscanf_s(line, "%d %d %d %d %d %s",&paraID, &branches, &storyArr[i].item, &storyArr[i].metCondition, &storyArr[i].cancelCondition, storyArr[i].speaker,SPEAKERLENGTH);//first scan for id,  branch number, item check, and met condition.
-			printf("5 data: %d %d %d %d %d %s\n",  paraID, branches, storyArr[i].item, storyArr[i].metCondition, storyArr[i].cancelCondition, storyArr[i].speaker);
+			sscanf_s(line, "%d %d %d %d %d %d %s",&paraID, &branches, &storyArr[i].item, &storyArr[i].metCondition, &storyArr[i].cancelCondition, &storyArr[i].aaId, storyArr[i].speaker,SPEAKERLENGTH);//first scan for id,  branch number, item check, and met condition.
+			//printf("5 data: %d %d %d %d %d %s\n",  paraID, branches, storyArr[i].item, storyArr[i].metCondition, storyArr[i].cancelCondition, storyArr[i].speaker);
 			//fgets(storyArr[i].speaker, SPEAKERLENGTH, fp);//scan for speaker name
 			//printf("speaker: %s\n", storyArr[i].speaker);
+			fgets(storyArr[i].location, MAXLINELEN, fp);
+			strtok(storyArr[i].location, "\n");
 			fgets(storyArr[i].content, MAXLINELEN, fp);//scan paragraph text
+			strtok(storyArr[i].content, "\n");
 			strncpy_s(storyArr[i].content, PARAGRAPHSIZE, replaceWord(storyArr[i].content, USERNAME, playerName), PARAGRAPHSIZE);//replace player name with custom value
-			printf("content: %s\n", storyArr[i].content);
+			//printf("content: %s\n", storyArr[i].content);
 			for (j = 0; j < branches; j++)//scan selection branches if they exist
 			{
 				fgets(storyArr[i].branches[j], MAXBRANCHLEN, fp);
+				strtok(storyArr[i].branches[j], "\n");
 			}
 			/*if (item)//scan item if it exist
 			{
@@ -39,12 +43,12 @@ void loadStory(Paragraph* storyArr,char* playerName)//load story data from file
 			}*/
 			//scan for branch condition array
 			fgets(line, MAXLINELEN, fp);
-			printf("branch condition array: %s\n", line);
+			//printf("branch condition array: %s\n", line);
 			sscanf_s(line, "%d %d %d %d %d %d %d %d %d %d", &storyArr[i].branchConditions[0], &storyArr[i].branchConditions[1], &storyArr[i].branchConditions[2], &storyArr[i].branchConditions[3], &storyArr[i].branchConditions[4], &storyArr[i].branchConditions[5], &storyArr[i].branchConditions[6], &storyArr[i].branchConditions[7], &storyArr[i].branchConditions[8], &storyArr[i].branchConditions[9]);
 			//scan for followup paragraph ids. multiple ids may exist if there is selection branch here
 			fgets(line, MAXLINELEN, fp);
 			sscanf_s(line, "%d %d %d %d %d %d %d %d %d %d", &storyArr[i].next[0], &storyArr[i].next[1], &storyArr[i].next[2], &storyArr[i].next[3], &storyArr[i].next[4], &storyArr[i].next[5], &storyArr[i].next[6], & storyArr[i].next[7], & storyArr[i].next[8], & storyArr[i].next[9]);
-			printf("next id array:: %d %d %d %d %d %d %d %d %d %d\n", storyArr[i].next[0], storyArr[i].next[1], storyArr[i].next[2], storyArr[i].next[3], storyArr[i].next[4], storyArr[i].next[5], storyArr[i].next[6], storyArr[i].next[7], storyArr[i].next[8], storyArr[i].next[9]);
+			//printf("next id array:: %d %d %d %d %d %d %d %d %d %d\n", storyArr[i].next[0], storyArr[i].next[1], storyArr[i].next[2], storyArr[i].next[3], storyArr[i].next[4], storyArr[i].next[5], storyArr[i].next[6], storyArr[i].next[7], storyArr[i].next[8], storyArr[i].next[9]);
 			i++;
 		}
 	}

@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="loadAA.c" />
+    <ClCompile Include="loadSaveMenu.c" />
     <ClCompile Include="loadSaveFile.c" />
     <ClCompile Include="loadSaveSlot.c" />
     <ClCompile Include="main.c" />
@@ -149,6 +150,7 @@
     <ClCompile Include="showMainMenu.c" />
     <ClCompile Include="showParagraph.c" />
     <ClCompile Include="writeSave.c" />
+    <ClCompile Include="writeSaveMenu.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AsciiArt.h" />
