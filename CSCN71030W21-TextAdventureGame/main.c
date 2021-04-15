@@ -34,6 +34,7 @@ int main(int argc, char** argv)
 	//SaveData* currentSave = (SaveData *)malloc(sizeof(SaveData));
 	//currentSave->conditions[0] = 1;
 	//currentSave->conditionNum++;
+	/*
 	if (argc < 2)
 	{
 		printf("please input username");
@@ -42,7 +43,7 @@ int main(int argc, char** argv)
 	else
 	{
 		strncpy(playerName, MAXUSERNAME, argv[1], MAXUSERNAME);
-	}
+	}*/
 	printf("waiting to open...\n");
 	loadSaveFile(playerName, &saveData);
 	loadAA(asciiArts);
@@ -54,7 +55,7 @@ int main(int argc, char** argv)
 		command = showMainMenu(asciiArts);
 		if (command == 0)
 		{
-			ending = showParagraph(storyArr, asciiArts, &saveData, &currentSave, itemData,playerName);//display first paragraph. Function will proceed to next parts of story automatically
+			ending = showParagraph(storyArr, asciiArts, saveData, &currentSave, itemData,playerName);//display first paragraph. Function will proceed to next parts of story automatically
 			if (ending > 0)
 			{
 				ending--;
@@ -69,7 +70,7 @@ int main(int argc, char** argv)
 			if (command < SAVESLOTS)
 			{
 				loadSaveSlot(saveData, command, &currentSave);
-				ending = showParagraph(storyArr, asciiArts, &saveData, &currentSave, itemData,playerName);//display first paragraph. Function will proceed to next parts of story automatically
+				ending = showParagraph(storyArr, asciiArts, saveData, &currentSave, itemData,playerName);//display first paragraph. Function will proceed to next parts of story automatically
 				if (ending > 0)
 				{
 					ending--;

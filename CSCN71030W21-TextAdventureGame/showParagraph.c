@@ -109,19 +109,20 @@ int showParagraph(Paragraph* storyArr,AsciiArt* asciiArts, SaveData* saveArr, Sa
 		}
 		if (command == 83 || command == 115)//save
 		{
-			returnVal = WriteSaveMenu(asciiArts);
+			//returnVal = WriteSaveMenu(asciiArts);
+			returnVal = WriteSaveMenu(saveArr);
 			if (returnVal < SAVESLOTS)
 			{
-				writeSave(playerName, &saveArr, *currentSave, returnVal);
+				writeSave(playerName, saveArr, *currentSave, returnVal);
 			}
 		}
 		if (command == 76 || command == 108)//load
 		{
-			returnVal = loadSaveMenu;
+			returnVal = loadSaveMenu(saveArr);
 			if (returnVal < SAVESLOTS)
 			{
-				loadSaveSlot(saveArr, returnVal, &currentSave);
-				return showParagraph(storyArr, asciiArts, &saveArr, currentSave, itemData, playerName);//go to paragraph pointed to by the cursor
+				loadSaveSlot(saveArr, returnVal, currentSave);
+				return showParagraph(storyArr, asciiArts, saveArr, currentSave, itemData, playerName);//go to paragraph pointed to by the cursor
 				break;
 			}
 		}
@@ -141,7 +142,7 @@ int showParagraph(Paragraph* storyArr,AsciiArt* asciiArts, SaveData* saveArr, Sa
 					if (storyArr[currentSave->progress].next[i] >= 0 && currentSave->conditions[storyArr[currentSave->progress].branchConditions[i]])//check if conditions are met to proceed to next paragraph. Branches ahead in array are more prioritized.
 					{
 						currentSave->progress = storyArr[currentSave->progress].next[i];
-						return showParagraph(storyArr, asciiArts,&saveArr, currentSave, itemData,playerName);
+						return showParagraph(storyArr, asciiArts,saveArr, currentSave, itemData,playerName);
 						break;
 					}
 					else if (storyArr[currentSave->progress].next[i] < 0 && currentSave->conditions[storyArr[currentSave->progress].branchConditions[i]])//This means end of story is reached.
@@ -158,7 +159,7 @@ int showParagraph(Paragraph* storyArr,AsciiArt* asciiArts, SaveData* saveArr, Sa
 				if (next[cursor] >= 0 && currentSave->conditions[branchConditions[cursor]])//make sure conditions are met
 				{
 					currentSave->progress = next[cursor];
-					return showParagraph(storyArr, asciiArts, &saveArr, currentSave, itemData,playerName);//go to paragraph pointed to by the cursor
+					return showParagraph(storyArr, asciiArts, saveArr, currentSave, itemData,playerName);//go to paragraph pointed to by the cursor
 					break;
 				}
 				else if (next[cursor] < 0 && currentSave->conditions[branchConditions[cursor]])

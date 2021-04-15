@@ -29,7 +29,7 @@ int loadSaveMenu(SaveData* saveData)
 			{
 				printf("%s%d\n",  "Save ", i);
 			}
-			else
+			else if(!saveData[i].exist)
 			{
 				printf("%s\n", "Empty Slot");
 			}
@@ -45,6 +45,8 @@ int loadSaveMenu(SaveData* saveData)
 		}
 		if (command == '\r')//move cursor down
 		{
+			if (!saveData[cursor].exist)
+				cursor = SAVESLOTS;
 			return cursor;
 		}
 	}
