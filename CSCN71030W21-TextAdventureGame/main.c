@@ -34,6 +34,15 @@ int main(int argc, char** argv)
 	//SaveData* currentSave = (SaveData *)malloc(sizeof(SaveData));
 	//currentSave->conditions[0] = 1;
 	//currentSave->conditionNum++;
+	if (argc < 2)
+	{
+		printf("please input username");
+		return 0;
+	}
+	else
+	{
+		strncpy(playerName, MAXUSERNAME, argv[1], MAXUSERNAME);
+	}
 	printf("waiting to open...\n");
 	loadSaveFile(playerName, &saveData);
 	loadAA(asciiArts);

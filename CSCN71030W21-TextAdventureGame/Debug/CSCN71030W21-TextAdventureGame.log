@@ -14,4 +14,5 @@ D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdvent
 D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showParagraph.c(144,48): warning C4024: 'showParagraph': different types for formal and actual parameter 3
 D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showParagraph.c(161,56): warning C4047: 'function': 'SaveData *' differs in levels of indirection from 'SaveData **'
 D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showParagraph.c(161,48): warning C4024: 'showParagraph': different types for formal and actual parameter 3
+  LINK : D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\Debug\CSCN71030W21-TextAdventureGame.exe not found or not built by the last incremental link; performing full link
   CSCN71030W21-TextAdventureGame.vcxproj -> D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\Debug\CSCN71030W21-TextAdventureGame.exe
