@@ -1,4 +1,5 @@
-﻿  main.c
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\main.c(49,36): warning C4047: 'function': 'SaveData *' differs in levels of indirection from 'SaveData (*)[10]'
-D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\main.c(49,27): warning C4024: 'loadSaveFile': different types for formal and actual parameter 2
+﻿  showEnding.c
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showEnding.c(34,9): warning C4013: 'system' undefined; assuming extern returning int
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showEnding.c(58,18): warning C4013: 'getch' undefined; assuming extern returning int
+D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\CSCN71030W21-TextAdventureGame\showEnding.c(70,9): warning C4013: 'exit' undefined; assuming extern returning int
   CSCN71030W21-TextAdventureGame.vcxproj -> D:\Conestoga college\Winter 2021\TeamBasedSoftwareDesign\CSCN71030W21-TextAdventureGame\Debug\CSCN71030W21-TextAdventureGame.exe

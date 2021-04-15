@@ -7,7 +7,7 @@ int showMainMenu(AsciiArt* asciiArts)
 	int i = 0,j=0;
 	int cursor = 0;
 	char command = 0;
-	char offset[30] = "                             ";
+	char offset[30] = "                         ";
 
 	while (1)
 	{

@@ -146,6 +146,7 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="loadStory.c" />
     <ClCompile Include="replaceWord.c" />
+    <ClCompile Include="resetSave.c" />
     <ClCompile Include="showEnding.c" />
     <ClCompile Include="showMainMenu.c" />
     <ClCompile Include="showParagraph.c" />

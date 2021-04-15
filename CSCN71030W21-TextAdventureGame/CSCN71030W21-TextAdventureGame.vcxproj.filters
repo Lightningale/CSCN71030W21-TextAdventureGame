@@ -51,6 +51,9 @@
     <ClCompile Include="writeSaveMenu.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="resetSave.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Paragraph.h">

@@ -43,7 +43,7 @@ int loadSaveMenu(SaveData* saveData)
 		{
 			cursor++;
 		}
-		if (command == '\r')//move cursor down
+		if (command == '\r'&&saveData[cursor].exist)//move cursor down
 		{
 			if (!saveData[cursor].exist)
 				cursor = SAVESLOTS;

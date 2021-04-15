@@ -11,3 +11,4 @@ void loadAA(AsciiArt* asciiArts);
 int showMainMenu(AsciiArt* asciiArts);
 int loadSaveMenu(SaveData* saveData);
 int WriteSaveMenu(SaveData* saveData);
+void resetSave(SaveData* currentSave);

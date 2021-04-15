@@ -61,7 +61,8 @@ int main(int argc, char** argv)
 			{
 				ending--;
 				showEnding(ending);
-				break;
+				resetSave(&currentSave);
+				//break;
 			}
 			
 		}
@@ -76,7 +77,8 @@ int main(int argc, char** argv)
 				{
 					ending--;
 					showEnding(ending);
-					break;
+					resetSave(&currentSave);
+					//break;
 				}
 			}
 		}

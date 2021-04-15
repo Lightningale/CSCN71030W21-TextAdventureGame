@@ -41,19 +41,19 @@ int showEnding(int ending)
 		
 		if (cursor == 0)
 		{
-			printf("%40s%s\n", " ", ">Back to menu");
+			printf("%34s%s\n", " ", ">Back to menu");
 		}
 		else
 		{
-			printf("%40s%s\n", " ", " Back to menu");
+			printf("%34s%s\n", " ", " Back to menu");
 		}
 		if (cursor == 1)
 		{
-			printf("%40s%s\n", " ", ">Exit game");
+			printf("%34s%s\n", " ", ">Exit game");
 		}
 		else
 		{
-			printf("%40s%s\n", " ", " Exit game");
+			printf("%34s%s\n", " ", " Exit game");
 		}
 		command = getch();
 		if (command == 72 && cursor > 0)//move cursor up
