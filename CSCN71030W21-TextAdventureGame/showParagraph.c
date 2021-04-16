@@ -93,14 +93,12 @@ int showParagraph(Paragraph* storyArr,AsciiArt* asciiArts, SaveData* saveArr, Sa
 		printf("|______________________________________________________________________________|\n");
 		printf("|%-78s|\n","Inventory");
 		printf("|%-78s|\n",inventory);
-		//printf("%s", inventory);
-		//printf("%-79s|\n"," ");
 		printf("|______________________________________________________________________________|\n");
 		printf("[S]:Save [L]:Load [E]:Return to menu\n");
-		//for (i = 0; i < CONDITIONNUMBER; i++)
-		//{
-		//	printf("%d:%d ",i, currentSave->conditions[i]);
-		//}
+		for (i = 0; i < CONDITIONNUMBER; i++)
+		{
+			printf("%d:%d ",i, currentSave->conditions[i]);
+		}
 		command = getch();
 		if (command == 72 && cursor > 0)//move cursor up
 		{
